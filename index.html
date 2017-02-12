@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf8">
+<head>
+	<title>Knygų keitimosi klubas</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="scripts.js">
+	</script>		
+</head>
+	<body>
+		<div class="wrapper">	
+			<div class="header">
+				<a href="index.html"><img src="images/logo.png" width="150" height="120"></img></a>
+				<h1>Knygų keitimosi klubas</h1>
+				<div class="login" id="login">			
+				<form>
+				Vartotojo vardas: <br><input type="text" id="username">
+				<br>
+				Slaptažodis: <br><input type="password">
+				<br>
+				<br>
+				</form>
+				<button onclick="document.getElementById('login').innerHTML = Login()">Prisijungti</button>
+				</div>
+				<div class="navbar">
+					<ul>
+						<li><a>Asmeninis knygų katalogas</a></li>
+						<li><a><img src="images/book_add.png" alt="pridėti knygą" width="30" height="25"></img></a></li>
+						<li><a><img src="images/book_remove.png" alt="pašalinti knygą" width="30" height="25"></img></a></li>
+					</ul>
+				</div>
+				<div class="book_search">
+					<input type="text">
+					<a href="thanks.html">
+					<img style="margin-left: 8px;" src="images/book_search.png" alt="ieškoti knygos" width="30" height="25">
+					</a>
+				</div></li>			
+			</div>
+			
+			
+			<div class="books">
+			<div class="book">
+				<a href="holmes.html">
+					<img src="books/robin.jpg" alt="Trolltunga Norway" width="300" height="200">
+			 	</a>
+				<div class="desc">Robinas Hudas</div>
+			</div>
+			<div class="book">
+				<a href="holmes.html">
+					<img src="books/sawyer.jpg" alt="Trolltunga Norway" width="300" height="200">
+			 	</a>
+				<div class="desc">Tomo Sojerio nuotykiai</div>
+			</div>
+			<div class="book">
+				<a href="holmes.html">
+					<img src="books/holmes.jpg" alt="Trolltunga Norway" width="300" height="200">
+			 	</a>
+				<div class="desc">Šerloko Holmso nuotykiai</div>
+			</div>
+			</div>
+			
+			<div class="left_banner">
+			<h1>reklama</h1>
+			</div>
+			
+			
+			<div class="right_banner">
+			<h1>reklama</h1>
+			</div>
+			
+			<div class="footer">
+				<a><img src="images/fridge.jpg" width="60px" height="120px"><a>
+				<a id="rights">&#169KKK.LT 2016</a>
+			
+			</div>			
+		</div>
+	<body>
+</html>
