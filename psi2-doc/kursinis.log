@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  19 MAR 2017 12:03
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  19 MAR 2017 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,11 +1190,11 @@ Package logreq Info: Writing requests to 'kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26010 strings out of 493589
- 480950 string characters out of 6148800
- 898091 words of memory out of 5000000
- 29124 multiletter control sequences out of 15000+600000
- 16582 words of font info for 82 fonts, out of 8000000 for 9000
+ 26012 strings out of 493589
+ 481068 string characters out of 6148800
+ 899091 words of memory out of 5000000
+ 29125 multiletter control sequences out of 15000+600000
+ 16590 words of font info for 83 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  67i,11n,96p,10497b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 

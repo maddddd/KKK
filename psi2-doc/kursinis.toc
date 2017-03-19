@@ -10,4 +10,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Priedai}{5}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{5}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Šaltinių sarašas}{6}
