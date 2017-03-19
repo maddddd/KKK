@@ -1,0 +1,82 @@
+\documentclass{VUMIFPSkursinis}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{array}
+
+% Allow having thick borders in a table
+%\makeatletter
+%\newcommand{\thickhline}{%
+%    \noalign {\ifnum 0=`}\fi \hrule height 2pt
+%    \futurelet \reserved@a \@xhline
+%}
+%\newcolumntype{"}{@{\vrule width 2pt}}
+%\makeatother
+
+% Titulinio aprašas
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\department{Programų sistemų katedra}
+\papertype{Architekturos dokumentacija}
+\title{Knygų keitimosi klubas}
+\titleineng{}
+\status{2 kurso 5 grupės studentai}
+\author{Vidmantas Bakštys}
+\secondauthor{Tadas Petrauskas}
+\thirdauthor{Tadas Vaitiekūnas} % Pavardes pagal abecele :)
+\supervisor{Vytautas Valaitis}
+\date{Vilnius – 2016}
+
+% Nustatymai
+% \setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+\bibliography{bibliografija}
+
+\begin{document}
+\maketitle
+
+\sectionnonum{Anotacija}
+%Šio darbo tikslas yra suprojektuoti ir aprašyti busimos programų sistemos - Automobilių detalių prekybos platforma, architektūrą.
+%Kuriant šį darbą buvo remiamasi ankščiau atlikta užsakovo poreikių bei dalykinės srities analize, bei reikalavimų specifikacija.
+%Darbą įgyvendina Programų sistemų 2 kurso 5 grupės studentai Vidmantas Bakštys, Tadas Petrauskas, Vytautas Saulis, Tadas Vaitiekūnas.
+
+\setcounter{tocdepth}{2}
+
+\tableofcontents
+
+\setcounter{secnumdepth}{0}
+
+\sectionnonum{Įvadas}
+%Šiame dokumente pateikiama programų sistemos „Automobilių dalių prekybos platforma" (toliau ADPP) architektūra. Ji yra apibrėžiama aprašant sistemą keliais aspektais (pjūviais), naudojant 4+1 pjūvių modelį. Architektūra buvo projektuojama taip, kad būtų įgyvendinami ankščiau pateikti užsakovo poreikiai, bei remiantis dalykinės srities analize. Šis dokumentas yra skirtas programuotojams, kuriantiems šią sistemą, bei būsimos sistemos administratoriams.
+%
+\setcounter{secnumdepth}{4}
+
+\section{Reikalavimai}
+
+
+\sectionnonum{Priedai}
+%\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
+\sectionnonum{Šaltinių sarašas}
+\begin{itemize}
+\item http://www.mif.vu.lt/~karolis/PSI1.html
+\item http://www.mif.vu.lt/katedros/se/Studentams/KURSINIO%20DARBO%20METODINIAI%20NURODYMAI202011
+\item http://www.autoplus.lt
+\item http://www.latex-project.org/help/documentation/
+\end{itemize}
+
+% literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
+% (cituotų, perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų
+% bibliografiniai aprašai.  Šaltinių sąrašas spausdinamas iš naujo puslapio.
+% Aprašai pateikiami netransliteruoti. Šaltinių sąraše negali būti tokių
+% šaltinių, kurie nebuvo paminėti tekste.
+
+\end{document}
