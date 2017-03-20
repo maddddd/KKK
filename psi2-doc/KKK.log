@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  19 MAR 2017 19:30
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  20 MAR 2017 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**kursinis.tex
-(./kursinis.tex
+**KKK.tex
+(./KKK.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./VUMIFPSkursinis.cls
@@ -1017,8 +1017,8 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                'date=edtf' requires 'seconds=true'.
 (biblatex)                Setting 'seconds=true' on input line 44.
 
-(./kursinis.aux)
-\openout1 = `kursinis.aux'.
+(./KKK.aux)
+\openout1 = `KKK.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -1149,11 +1149,11 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `kursinis.bcf'.
+\openout4 = `KKK.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'kursinis.bbl' found.
-(./kursinis.bbl)
+Package biblatex Info: ... file 'KKK.bbl' found.
+(./KKK.bbl)
 Package biblatex Info: Reference section=0 on input line 44.
 Package biblatex Info: Reference segment=0 on input line 44.
 \c@lstlisting=\count365
@@ -1169,14 +1169,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [1
 
-] (./kursinis.toc)
+] (./KKK.toc)
 \tf@toc=\write5
-\openout5 = `kursinis.toc'.
+\openout5 = `KKK.toc'.
 
+ [2
 
-[2
-
-] [3
+]
+[3
 
 ] [4
 
@@ -1184,18 +1184,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [6
 
-] (./kursinis.aux)
-Package logreq Info: Writing requests to 'kursinis.run.xml'.
-\openout1 = `kursinis.run.xml'.
+] (./KKK.aux)
+Package logreq Info: Writing requests to 'KKK.run.xml'.
+\openout1 = `KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  26012 strings out of 493589
- 481068 string characters out of 6148800
- 899091 words of memory out of 5000000
+ 480993 string characters out of 6148800
+ 899081 words of memory out of 5000000
  29125 multiletter control sequences out of 15000+600000
  16590 words of font info for 83 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 67i,11n,96p,10497b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,11n,96p,10492b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (7 pages).
+Output written on KKK.pdf (7 pages).

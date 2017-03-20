@@ -1,8 +1,8 @@
 generuoti:
-	xelatex kursinis.tex
-	biber kursinis
-	xelatex kursinis.tex
-	xdg-open kursinis.pdf
+	xelatex KKK.tex
+	biber KKK
+	xelatex KKK.tex
+	xdg-open KKK.pdf
 
 ubuntu:
 	echo "Diegiamas LaTeX (PdfLaTeX, XeTeX ir kt.)"
