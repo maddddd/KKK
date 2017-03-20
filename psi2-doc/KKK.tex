@@ -13,6 +13,7 @@
 \usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage{array}
+\usepackage{enumitem}
 
 % Allow having thick borders in a table
 %\makeatletter
@@ -64,7 +65,60 @@
 \setcounter{secnumdepth}{4}
 
 \section{Reikalavimai}
-
+Šiame skyriuje pateikiami funkciniai bei nefunkciniai reikalavimai sistemai, apibrėžiantys norimą sistemos pokytį.
+Reikalavimai buvo sudaryti remiantis esama sistema ir užsakavo pateiktais pradiniais reikalavimais,
+kurie yra pateikiami šio dokumento priede.
+\subsection{Funkciniai reikalavimai}
+	\begin{enumerate}[label=\textbf{FR\arabic*}]
+		\item Užsiregistravęs vartotojas gali prisijungti:
+			\begin{enumerate}[label*=\textbf{.\arabic*}]
+				\item Naudodamasis savo vartotojo vardu (arba elektroniniu paštu) ir slaptažodžiu;
+				\item Naudodamasis socialinio tinklo paskyrą;
+			\end{enumerate}
+		\item Norimų gauti knygų sarašas;
+			\begin{enumerate}[label*=\textbf{.\arabic*}]
+				\item Kiekvienas registruotas vartotojas gali pridėti knygų prie savo sarašo;
+				\item Vartotojas gali įkelti knygą į savo saraša nurodydams ISBN kodą;
+				\item Vartotojas gali ieškoti knygos internete pagal pavadinimą ar autorių ir 
+					pasirinkęs ją įkelti į savo sarašą;
+				\item Sistema neleidžia įkelti neegzistuojančios knygos į savo sarašą;
+				\item Vartotojai gali matyti kitų vartotojų sarašus;
+				\item Varotojui pranešti (el paštu) kada sistemoje atsiranda knyga esenti jo saraše;
+		    \end{enumerate}
+		\item Knygos užregistravimas sistemoje;
+			\begin{enumerate}[label*=\textbf{.\arabic*}]
+				\item Vartotojas gali įkelti knygą įvesdamas knygos ISBN kodą;
+				\item Vartotojas gali ieškoti knygos pagal pavadinimą ar autorių ir 
+					pasirinkęs ją įkelti;
+				\item Sistemą leidžia vartotojui įkelti knygą tik jei knyga su tuo ISBN kodu egzistuoja;
+				\item Vartotojas gali pridėti komentarą apie savo įkeltą knygą;
+				\item Vartotojo pridėtos knygos puslapyje pridėti oficialų aprašymą apie knygą;
+			\end{enumerate}
+		\item Įkeltų knygų paieška;
+			\begin{enumerate}[label*=\textbf{.\arabic*}]
+				\item Vartotojas gali ieškoti knygos sistemoje pagal ISBN kodą;
+				\item Vartotojas gali ieškoti knygos raktinius žodžius;
+				\item Jei knygos sistemoje nėra ieškoti jos internete, radus pasiūlyti pridėti
+					prie norimų gauti knygų sarašo;
+			\end{enumerate}
+		\item Vartotojai gali ieškoti kitų vartotojų, matyti jų puslapius ir su jais susisiekti;
+		\item Vartotojas gali pasiūlyti savo įkeltą knygą kitam vartotojui;
+		\item Vartotojo puslapyje rodyti išsamią statistiką;
+			\begin{enumerate}[label*=\textbf{.\arabic*}]
+				\item Sėkmingų mainų skaičius;
+				\item Įkeltų knygų skaičius; 
+				\item Kitų vartotojų įvertinimai;
+				\item Ivertinimų vidurkis;
+			\end{enumerate}
+	\end{enumerate}
+\subsection{Nefunkciniai reikalavimai}
+	\begin{enumerate}[label=\textbf{NFR\arabic*}]
+		\item Tinklapis turi būti pasiekiamas ir patogus naudoti, per mobilųjį įrenginį;
+		\item Turi būti užtikrintas duomenų vientisumas duomenų bazėje;
+		\item Turi būti užtikrinta galimybė atkurti duomenų bazės duomenis, įvykus sutrikimams;
+		\item Turi būti sukurta sistemos administravimo dokumentacija;
+	\end{enumerate}
+	
 \setcounter{secnumdepth}{0}
 \sectionnonum{Priedai}
 \subsection{Užsakovo reikalavimai sistemai}
@@ -77,8 +131,9 @@
 		nebūtinai pilną pavadinimą arba autoriu;
 	\item Leisti ieškoti knygos sistemoje pagal ISBN kodą;
 	\item Kiekvienam vartotojui leisti susikurti savo norimų gauti knygų sarašą (wishlist);
+	\item Neradus ieškomos knygos sistemoje, pasiūlyti ją pridėti prie norimų gauti knygų sarašo;
 	\item Suteikti galimybe vartotojui pasiūlyti savo įkeltą knygą kitam vartotojui;
-	\item Suteikti galimybe vartotojui ieškoti kitų vartotjų, bei susisiekti su jais ne vien
+	\item Suteikti galimybe vartotojui ieškoti kitų vartotojų, bei susisiekti su jais ne vien
 		perkant iš jų knygas;
 	\item Vartotojo užregistruotos knygos puslapyje automatiškai pridėti knygos aprašymą
 		iš interneto;
@@ -86,6 +141,10 @@
 		pačią knyga ir panašiai);
 	\item Vartotojo paskyroje rodyt išsamią vartotojo statistiką (sėkmingų mainų skaičius,
 		įvertinimai);
+	\item Tinklapis turi būti pasiekiamas ir patogus naudoti, per mobilųjį įrenginį;
+	\item Turi būti užtikrintas duomenų vientisumas duomenų bazėje;
+	\item Turi būti užtikrinta galimybė atkurti duomenų bazės duomenis, įvykus sutrikimams;
+	\item Turi būti sukurta sistemos administravimo dokumentacija;
 \end{enumerate}
 
 
@@ -95,10 +154,7 @@
 %\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
 \sectionnonum{Šaltinių sarašas}
 \begin{itemize}
-\item http://www.mif.vu.lt/~karolis/PSI1.html
-\item http://www.mif.vu.lt/katedros/se/Studentams/KURSINIO%20DARBO%20METODINIAI%20NURODYMAI202011
-\item http://www.autoplus.lt
-\item http://www.latex-project.org/help/documentation/
+\item http://www.mif.vu.lt/~karolis/PSI2.html
 \end{itemize}
 
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų

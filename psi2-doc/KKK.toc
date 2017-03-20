@@ -8,8 +8,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.}Reikalavimai}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{4}
+\contentsline {subsection}{\numberline {1.1.}Funkciniai reikalavimai}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{4}
+\contentsline {subsection}{\numberline {1.2.}Nefunkciniai reikalavimai}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sarašas}{5}
+\contentsline {section}{Priedai}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Šaltinių sarašas}{6}
