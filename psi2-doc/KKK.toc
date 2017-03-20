@@ -4,12 +4,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Anotacija}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Įvadas}{3}
+\contentsline {section}{Įvadas}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.}Reikalavimai}{4}
+\contentsline {section}{\numberline {1.}Reikalavimai}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{5}
+\contentsline {section}{Priedai}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{5}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sarašas}{6}
+\contentsline {section}{Šaltinių sarašas}{5}

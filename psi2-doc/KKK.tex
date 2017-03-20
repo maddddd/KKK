@@ -27,7 +27,7 @@
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
-\papertype{Architekturos dokumentacija}
+\papertype{Reikalavimų specifikacija}
 \title{Knygų keitimosi klubas}
 \titleineng{}
 \status{2 kurso 5 grupės studentai}
@@ -44,16 +44,19 @@
 \begin{document}
 \maketitle
 
+\setcounter{tocdepth}{2}
+
+\pagenumbering{gobble}  % nerodyti puslapio numberio turinyje
+\tableofcontents
+\pagenumbering{arabic} 
+
+\setcounter{secnumdepth}{0}
+
 \sectionnonum{Anotacija}
 %Šio darbo tikslas yra suprojektuoti ir aprašyti busimos programų sistemos - Automobilių detalių prekybos platforma, architektūrą.
 %Kuriant šį darbą buvo remiamasi ankščiau atlikta užsakovo poreikių bei dalykinės srities analize, bei reikalavimų specifikacija.
 %Darbą įgyvendina Programų sistemų 2 kurso 5 grupės studentai Vidmantas Bakštys, Tadas Petrauskas, Vytautas Saulis, Tadas Vaitiekūnas.
 
-\setcounter{tocdepth}{2}
-
-\tableofcontents
-
-\setcounter{secnumdepth}{0}
 
 \sectionnonum{Įvadas}
 %Šiame dokumente pateikiama programų sistemos „Automobilių dalių prekybos platforma" (toliau ADPP) architektūra. Ji yra apibrėžiama aprašant sistemą keliais aspektais (pjūviais), naudojant 4+1 pjūvių modelį. Architektūra buvo projektuojama taip, kad būtų įgyvendinami ankščiau pateikti užsakovo poreikiai, bei remiantis dalykinės srities analize. Šis dokumentas yra skirtas programuotojams, kuriantiems šią sistemą, bei būsimos sistemos administratoriams.
