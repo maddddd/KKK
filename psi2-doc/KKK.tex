@@ -65,9 +65,9 @@
 \setcounter{secnumdepth}{4}
 
 \section{Reikalavimai}
-Šiame skyriuje pateikiami funkciniai bei nefunkciniai reikalavimai sistemai, apibrėžiantys norimą sistemos pokytį.
-Reikalavimai buvo sudaryti remiantis esama sistema ir užsakavo pateiktais pradiniais reikalavimais,
-kurie yra pateikiami šio dokumento priede.
+	Šiame skyriuje pateikiami funkciniai bei nefunkciniai reikalavimai sistemai, apibrėžiantys norimą sistemos pokytį.
+	Reikalavimai buvo sudaryti remiantis esama sistema ir užsakavo pateiktais pradiniais reikalavimais,
+	kurie yra pateikiami šio dokumento priede.
 \subsection{Funkciniai reikalavimai}
 	\begin{enumerate}[label=\textbf{FR\arabic*}]
 		\item Užsiregistravęs vartotojas gali prisijungti:
@@ -75,7 +75,7 @@ kurie yra pateikiami šio dokumento priede.
 				\item Naudodamasis savo vartotojo vardu (arba elektroniniu paštu) ir slaptažodžiu;
 				\item Naudodamasis socialinio tinklo paskyrą;
 			\end{enumerate}
-		\item Norimų gauti knygų sarašas;
+		\item Norimų gauti knygų sąrašas;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Kiekvienas registruotas vartotojas gali pridėti knygų prie savo sarašo;
 				\item Vartotojas gali įkelti knygą į savo saraša nurodydams ISBN kodą;
@@ -92,14 +92,15 @@ kurie yra pateikiami šio dokumento priede.
 					pasirinkęs ją įkelti;
 				\item Sistemą leidžia vartotojui įkelti knygą tik jei knyga su tuo ISBN kodu egzistuoja;
 				\item Vartotojas gali pridėti komentarą apie savo įkeltą knygą;
-				\item Vartotojo pridėtos knygos puslapyje pridėti oficialų aprašymą apie knygą;
+				\item Vartotojo pridėtos knygos puslapyje automatiškai pridėti oficialų aprašymą apie knygą;
 			\end{enumerate}
 		\item Įkeltų knygų paieška;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
-				\item Vartotojas gali ieškoti knygos sistemoje pagal ISBN kodą;
-				\item Vartotojas gali ieškoti knygos raktinius žodžius;
-				\item Jei knygos sistemoje nėra ieškoti jos internete, radus pasiūlyti pridėti
+				\item Lankytojas gali ieškoti knygos sistemoje pagal ISBN kodą;
+				\item Lankytojas gali ieškoti knygos pagal raktinius žodžius;
+				\item Jei knygos sistemoje nėra, ieškoti jos internete, radus pasiūlyti pridėti
 					prie norimų gauti knygų sarašo;
+				\item Knygos gali ieškoti ir neregistruotas lankytojas;
 			\end{enumerate}
 		\item Vartotojai gali ieškoti kitų vartotojų, matyti jų puslapius ir su jais susisiekti;
 		\item Vartotojas gali pasiūlyti savo įkeltą knygą kitam vartotojui;
@@ -118,6 +119,35 @@ kurie yra pateikiami šio dokumento priede.
 		\item Turi būti užtikrinta galimybė atkurti duomenų bazės duomenis, įvykus sutrikimams;
 		\item Turi būti sukurta sistemos administravimo dokumentacija;
 	\end{enumerate}
+
+\section{Struktūrinis dalykinės srities modelis}
+	Šiame skyriuje pateikiamas struktūrinis nagrinėjamos dalykinės srities modelis. 
+	Modelis pateikiamas UML klasių diagramomis kartu su žodynu - sąrašu esybių su jų aprašymais. 
+	\subsection{Esybių diagrama}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.7]{img/DomainModel.png}
+			\caption{Dalykinės srities esybės}
+			\label{img:psi2}
+		\end{figure}
+
+	\subsection{Žodynas}
+		\begin{enumerate}[label=\textbf{E\arabic*.}]
+			\item Vartotojas - Asmuo užsiregistravęs (turintis paskyrą) sistemoje;
+			\item Lankytojas - Asmuo apsilankęs tinklapyje (nebūtinai vartotojas);
+			\item Knyga - literatūros kūrinys, turintis ISBN kodą;
+			\item Įkelta knyga - į KKK sistemą ikelta knyga;
+			\item Knygų duomenų bazė - Duomenų bazė prie kurios sistema jungsis ieškodama knygų, tikrindama ISBN kodus;
+			\item Knygų sąrašas - bet kokių knygų rinkinys;
+			\item Ikeltų knygų katalogas - sąrašas visų į KKK sistemą įkeltų knygų;
+			\item Knygos aprašymas - oficialus knygos aprašymas paimtas iš knygų duomenų bazės;
+			\item Komentaras - Vartotojo komentaras apie savo įkeltą knygą;
+			\item Pageidavimų sąrašas - Sarašas knygų, kurias vartotjas norėtų įsigyti;
+			\item Vartotojo puslapis - vartotojo turimas paskyros puslapis kuriame patalpinta visa viešai matoma vartotojo informacija;
+			\item Paieškos rezultatas - knygos paieškos knygų duomenų bazėje rezultatas, ar KKK sistemoje rezultatas;
+			\item Vartotojo statistika - išsami vartotojo statistika apie vartotoją;
+		\end{enumerate}
+
 	
 \setcounter{secnumdepth}{0}
 \sectionnonum{Priedai}
@@ -152,10 +182,10 @@ kurie yra pateikiami šio dokumento priede.
 
 
 %\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
-\sectionnonum{Šaltinių sarašas}
-\begin{itemize}
-\item http://www.mif.vu.lt/~karolis/PSI2.html
-\end{itemize}
+\sectionnonum{Šaltinių sąrašas}
+	\begin{itemize}
+		\item http://www.mif.vu.lt/~karolis/PSI2.html
+	\end{itemize}
 
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
 % (cituotų, perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  20 MAR 2017 13:54
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  20 MAR 2017 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,9 +1189,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [3
 
-] [4] [5
+] [4]
+File: img/DomainModel.png Graphic file (type QTm)
+ <use  "img/DomainModel.png" > [5
 
-] [6
+] [6] [7
+
+] [8
 
 ] (./KKK.aux)
 Package logreq Info: Writing requests to 'KKK.run.xml'.
@@ -1199,12 +1203,12 @@ Package logreq Info: Writing requests to 'KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26300 strings out of 493589
- 485843 string characters out of 6148800
- 909199 words of memory out of 5000000
- 29409 multiletter control sequences out of 15000+600000
+ 26312 strings out of 493589
+ 485985 string characters out of 6148800
+ 909207 words of memory out of 5000000
+ 29417 multiletter control sequences out of 15000+600000
  16590 words of font info for 83 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  67i,11n,96p,10492b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on KKK.pdf (8 pages).
+Output written on KKK.pdf (10 pages).
