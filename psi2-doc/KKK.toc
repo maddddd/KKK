@@ -18,8 +18,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.}Žodynas}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{7}
+\contentsline {section}{\numberline {3.}Užduotys}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{7}
+\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{8}
+\contentsline {section}{Priedai}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Šaltinių sąrašas}{10}

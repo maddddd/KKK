@@ -68,7 +68,6 @@
 	Šiame skyriuje pateikiami funkciniai bei nefunkciniai reikalavimai sistemai, apibrėžiantys norimą sistemos pokytį.
 	Reikalavimai buvo sudaryti remiantis esama sistema ir užsakavo pateiktais pradiniais reikalavimais,
 	kurie yra pateikiami šio dokumento priede.
-	%TODO: prideti reikalavimus del apsikeitimo proceso, kad fiksuotu statistiką, atitinkamai pataisyti ir dalykines srities modeli
 \subsection{Funkciniai reikalavimai}
 	\begin{enumerate}[label=\textbf{FR\arabic*}]
 		\item Užsiregistravęs vartotojas gali prisijungti:
@@ -86,7 +85,7 @@
 				\item Vartotojai gali matyti kitų vartotojų sarašus;
 				\item Varotojui pranešti (el paštu) kada sistemoje atsiranda knyga esenti jo saraše;
 		    \end{enumerate}
-		\item Knygos užregistravimas sistemoje;
+		\item Knygos įkėlimas į sistemą;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Vartotojas gali įkelti knygą įvesdamas knygos ISBN kodą;
 				\item Vartotojas gali ieškoti knygos pagal pavadinimą ar autorių ir 
@@ -146,8 +145,31 @@
 			\item Pageidavimų sąrašas - Sarašas knygų, kurias vartotjas norėtų įsigyti;
 			\item Vartotojo puslapis - vartotojo turimas paskyros puslapis kuriame patalpinta visa viešai matoma vartotojo informacija;
 			\item Paieškos rezultatas - knygos paieškos knygų duomenų bazėje rezultatas, ar KKK sistemoje rezultatas;
-			\item Vartotojo statistika - išsami vartotojo statistika apie vartotoją;
+			\item Vartotojo statistika - Statistinė informacija apie vartotojo paskyrą: sėkmingų mainų skaičius, įkeltų knygų skaičius,
+				kitų vartotojų įvertinimai, įvertinimų vidurkis;
 		\end{enumerate}
+
+\section{Užduotys}
+	Šiame skyriuje pateikiamos sistemos atliekamos užduotys, jų pagrindiniai, bei alternatyvūs scenarijai.
+	%TODO: uzduociu uml
+	\begin{enumerate}[label=\textbf{U\arabic*.}]
+		%TODO: gui eskizai
+		\item Užsiregistruoti;		% leisti asocijuoti su soc. tinklo paskyra
+		\item Prisijungti;
+		\item Pridėti knygą prie pageidavimų sąrašo;
+		\item Įkelti knygą į sistemą;
+		\item Ieškoti knygos įkeltų knygų kataloge;
+		\item Susisiekti su kitais vartotojais;
+		\item Susisiekti su pardevėju;
+		\item Susisiekti su pirkėju;
+		\item Įvertinti mainus; % fiksuoti statistiką
+		\item Pasiūlyti savo įkeltą knygą kitam vartotojui;
+	\end{enumerate}
+
+\section{Peržiūros metu rastos klaidos}
+	\begin{itemize}
+		\item 
+	\end{itemize}
 
 	
 \setcounter{secnumdepth}{0}
