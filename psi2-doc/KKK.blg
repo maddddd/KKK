@@ -1,9 +1,9 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
 [0] Config.pm:357> INFO - Logfile is 'KKK.blg'
-[36] biber:302> INFO - === Mon Mar 27, 2017, 16:06:26
-[51] Biber.pm:359> INFO - Reading 'KKK.bcf'
-[131] Biber.pm:823> INFO - Found 0 citekeys in bib section 0
-[137] Utils.pm:164> WARN - The file 'KKK.bcf' does not contain any citations!
-[144] bbl.pm:597> INFO - Writing 'KKK.bbl' with encoding 'UTF-8'
-[144] bbl.pm:701> INFO - Output to KKK.bbl
-[144] Biber.pm:109> INFO - WARNINGS: 1
+[35] biber:302> INFO - === Mon Mar 27, 2017, 18:59:30
+[55] Biber.pm:359> INFO - Reading 'KKK.bcf'
+[137] Biber.pm:823> INFO - Found 0 citekeys in bib section 0
+[143] Utils.pm:164> WARN - The file 'KKK.bcf' does not contain any citations!
+[148] bbl.pm:597> INFO - Writing 'KKK.bbl' with encoding 'UTF-8'
+[149] bbl.pm:701> INFO - Output to KKK.bbl
+[149] Biber.pm:109> INFO - WARNINGS: 1

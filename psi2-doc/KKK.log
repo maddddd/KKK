@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  27 MAR 2017 16:06
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  27 MAR 2017 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,32 +1196,32 @@ File: img/DomainModel.png Graphic file (type QTm)
 ] [6] [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
@@ -1239,7 +1239,7 @@ Package logreq Info: Writing requests to 'KKK.run.xml'.
 Here is how much of TeX's memory you used:
  26312 strings out of 493589
  485985 string characters out of 6148800
- 909207 words of memory out of 5000000
+ 909217 words of memory out of 5000000
  29417 multiletter control sequences out of 15000+600000
  16590 words of font info for 83 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
