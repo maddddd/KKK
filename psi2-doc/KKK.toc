@@ -32,12 +32,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{9}
+\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{10}
+\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{11}
+\contentsline {section}{Priedai}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{11}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{12}
+\contentsline {section}{Šaltinių sąrašas}{13}

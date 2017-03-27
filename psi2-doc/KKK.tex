@@ -171,10 +171,47 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
 			\item \textbf{Užsiregistruoti};		% leisti asocijuoti su soc. tinklo paskyra
+				Lankytojas paspaudžia mygtuką „užsiregistruoti.“ Sistema parodo registracijos langą, kuriame yra registracijos forma.
+				Lankytojas suveda savo pasirinktą vartotojo vardą, elektroninį paštą, bei slaptažodį, taip pat jei nori, 
+				papildomą informaciją: gyvenamąją vietą, amžių. Tada lankytojas paspaudžia „patvirtinti.“ 
+				Sistema patikrina ar įvesta informacija yra tinkama ir sukuria naują vartotojo paskyrą duomenų bazėje.
+				Sistema išsiunčia patvirtinimo laiška nurodytu el. paštu. 
+				Lankytojas patvirtina, savo registraciją paspausdamas nuorodą, gautame laiške. Sistema, gavusi patvirtinimą, išsaugo vartotoją duomenų bazėje kaip patvirtintą,
+				pakeičia lankytojo statusą į prisijungusį, bei parodo pagrindinį tinklapio puslapį.\\
+				\textbf{Alternatyvūs scenarijai:}
+				\begin{itemize}
+					\item Jei lankytojo suvesta informacija nėra tinkama, sistema parodo pranešimą apie tai, nurodydama kurios įvestys nėra tinkamos.
+					\item Jei vartotojo paskyra nėra patvirtinama per 24 valandas, sistema panaikina vartotojo paskyrą duomenų bazėje.
+					\item Jei lankytojas registracijos formoje paspaudžia mygtuką „tęsti su facebook,“ sistema inicijuoja registracija per soc. tinklą.
+	                    Naršyklė lankytojo paprašo patvirtinti, kad leidžia perduoti facebook vartotojo duomenis sistemai.
+						Sistema gauna pagrindinę vartotojo informacija iš facebook, bei sukuria naują vartotojo paskyrą duomenų bazėje.
+						Sistema pakeičia lankytojo statusą į prisijungusį, bei parodo pagrindinį puslapį.
+						\begin{itemize}
+							\item Jei lankytojas nėra prisijungęs prie facobook naršyklėje, jis nukreipiamas į facebook prisijungimo langą. 
+								Lankytojas prisijungia, tuomet sistema tęsia registracijos procesą.
+							\item Jei įvyksta sutrikimai asocijuojant lankytoją su facebook paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
+								sistema vartotoją gražina į registracijos puslapį.
+						\end{itemize}
+				\end{itemize}
 			\item \textbf{Prisijungti;}
+				Lankytojas įveda savo vartotojo vardą ar (elektroninį paštą) ir slaptažodį i tam skirtus laukelius, bei spaudžia prisijungti.
+				Sistema patikrina ar yra vartotojas su tokiu prisijungimo vardu ar el. paštu sistemoje. 
+				Tada sistema patikrina ar įvestas slaptažodis yra vartotojo. Sistema pakeičia lankytojo statusą į prisijungusį ir parodo pagrindinį puslapį.\\
+				\textbf{Alternatyvūs scenarijai:}
+				\begin{itemize}
+					\item Jei vartotjas su tokiais duomenimis nerastas parodomas pranešimas apie tai.
+					\item Jei lankytojas paspaudžia mygtuką „prisijungti su facebook“ sistema inicijuoja prisijungimą per facebook.
+						\begin{itemize}
+							\item Jei lankytojas nėra prisijungęs prie facobook naršyklėje, jis nukreipiamas į facebook prisijungimo langą. 
+								Lankytojas prisijungia, tuomet sistema tęsia prisijungimo procesą.
+							\item Jei įvyksta sutrikimai asocijuojant lankytoją su facebook paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
+								sistema vartotoją gražina į pagrindinį puslapį.
+							\item Jei lankytojo facebook paskyra nėra asocijuota su jokiu KKK sistemos vartotoju, sistema inicijuoja vartotojo registraciją per facebook (žr. U1: alternatyvūs scenarijai).
+						\end{itemize}
+				\end{itemize}
 			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
-				Vartotojas paspaudžia mygtuką „prideti knyga prie pageidavimų sąrašo“. %TODO: liet. kabutes
-				Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“(žr. U6).
+				Vartotojas paspaudžia mygtuką „prideti knyga prie pageidavimų sąrašo“. 
+				Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
 				Vartotojas rastų knygų saraše pasirenka vieną iš knygų, ir paspaudžia mygtuką „pridėti pasirinktą knygą“.
 				Sistema vykdo užduotį „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
 			\item \textbf{Įkelti knygą į sistemą;}\\
