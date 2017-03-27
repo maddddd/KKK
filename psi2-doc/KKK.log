@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  27 MAR 2017 15:17
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  27 MAR 2017 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1195,14 +1195,43 @@ File: img/DomainModel.png Graphic file (type QTm)
 
 ] [6] [7
 
-] [8] [9
+]
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
-] [10
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[9] [10
 
 ] [11
 
-]
-(./KKK.aux)
+] [12
+
+] (./KKK.aux)
 Package logreq Info: Writing requests to 'KKK.run.xml'.
 \openout1 = `KKK.run.xml'.
 
@@ -1216,4 +1245,4 @@ Here is how much of TeX's memory you used:
  1347 hyphenation exceptions out of 8191
  67i,11n,96p,10492b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on KKK.pdf (13 pages).
+Output written on KKK.pdf (14 pages).
