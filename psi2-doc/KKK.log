@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.19)  27 MAR 2017 23:23
+=======
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 13:15
+>>>>>>> b1fd01cb3578bfc8a4ab2e88a83e10a6e17ac4df
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,6 +1024,7 @@ Package biblatex Info: ... file 'lithuanian.lbx' found.
  (./lithuanian.lbx
 File: lithuanian.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)$Id: lithu
 anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
+<<<<<<< HEAD
 )
 
 Package biblatex Warning: Conflicting options.
@@ -1027,6 +1032,16 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                Setting 'seconds=true' on input line 45.
 
 (./KKK.aux)
+=======
+) (./KKK.aux
+
+LaTeX Warning: Label `strukturinisDSModelis_matrica' multiply defined.
+
+
+LaTeX Warning: Label `tab:table example' multiply defined.
+
+)
+>>>>>>> b1fd01cb3578bfc8a4ab2e88a83e10a6e17ac4df
 \openout1 = `KKK.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -1193,6 +1208,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: img/DomainModel.png Graphic file (type QTm)
  <use  "img/DomainModel.png" > [5
 
+<<<<<<< HEAD
 ] [6]
 File: img/UseCase.png Graphic file (type QTm)
  <use  "img/UseCase.png" >
@@ -1203,10 +1219,30 @@ Overfull \hbox (42.69768pt too wide) in paragraph at lines 171--172
 [7
 
 ] [8] [9] [10] [11] [12] [13
+=======
+] [6] [7] [8
+
+] [9] [10]
+! Missing } inserted.
+<inserted text> 
+                }
+l.321 ^^I^^I^^I\end{enumerate}
+                              
+? 
+[11] [12] [13
 
 ] [14
 
 ] [15
+>>>>>>> b1fd01cb3578bfc8a4ab2e88a83e10a6e17ac4df
+
+] [14
+
+<<<<<<< HEAD
+] [15
+=======
+LaTeX Warning: There were multiply-defined labels.
+>>>>>>> b1fd01cb3578bfc8a4ab2e88a83e10a6e17ac4df
 
 ] (./KKK.aux)
 Package logreq Info: Writing requests to 'KKK.run.xml'.
@@ -1214,6 +1250,7 @@ Package logreq Info: Writing requests to 'KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  26317 strings out of 493589
  486068 string characters out of 6148800
  913225 words of memory out of 5000000
@@ -1221,5 +1258,14 @@ Here is how much of TeX's memory you used:
  16590 words of font info for 83 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  67i,11n,96p,10492b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 25291 strings out of 493638
+ 467094 string characters out of 6146796
+ 835936 words of memory out of 5000000
+ 28388 multiletter control sequences out of 15000+600000
+ 18159 words of font info for 90 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 68i,11n,96p,10492b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> b1fd01cb3578bfc8a4ab2e88a83e10a6e17ac4df
 
 Output written on KKK.pdf (17 pages).
