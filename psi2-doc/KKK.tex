@@ -78,11 +78,11 @@
 		\item Norimų gauti knygų sąrašas;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Kiekvienas registruotas vartotojas gali pridėti knygų prie savo sarašo;
-				\item Vartotojas gali įkelti knygą į savo saraša nurodydams ISBN kodą;
+				\item Vartotojas gali įkelti knygą į savo saraša nurodydamas ISBN kodą;
 				\item Vartotojas gali ieškoti knygos internete pagal pavadinimą ar autorių ir 
 					pasirinkęs ją įkelti į savo sarašą;
 				\item Sistema neleidžia įkelti neegzistuojančios knygos į savo sarašą;
-				\item Vartotojai gali matyti kitų vartotojų sarašus;
+				\item Vartotojai gali matyti, savo ir kitų vartotojų sarašus;
 				\item Varotojui pranešti (el paštu) kada sistemoje atsiranda knyga esenti jo saraše;
 		    \end{enumerate}
 		\item Knygos įkėlimas į sistemą;
@@ -142,7 +142,7 @@
 			\item Ikeltų knygų katalogas - sąrašas visų į KKK sistemą įkeltų knygų;
 			\item Knygos aprašymas - oficialus knygos aprašymas paimtas iš knygų duomenų bazės;
 			\item Komentaras - Vartotojo komentaras apie savo įkeltą knygą;
-			\item Pageidavimų sąrašas - Sarašas knygų, kurias vartotjas norėtų įsigyti;
+			\item Pageidavimų sąrašas - Sarašas knygų, kurias vartotojas norėtų įsigyti;
 			\item Vartotojo puslapis - vartotojo turimas paskyros puslapis kuriame patalpinta visa viešai matoma vartotojo informacija;
 			\item Paieškos rezultatas - knygos paieškos knygų duomenų bazėje rezultatas, ar KKK sistemoje rezultatas;
 			\item Vartotojo statistika - Statistinė informacija apie vartotojo paskyrą: sėkmingų mainų skaičius, įkeltų knygų skaičius,
@@ -157,8 +157,25 @@
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
 			\item Užsiregistruoti;		% leisti asocijuoti su soc. tinklo paskyra
-			\item Prisijungti;
-			\item Pridėti knygą prie pageidavimų sąrašo;
+			\item \textbf{Prisijungti;}
+			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
+				Vartotojas paspaudžia mygtuką "prideti knyga prie pageidavimų sąrašo". %TODO: liet. kabutes
+				Sistema vartotojui parodo knygos paieškos langą. Vartotojas pasirenka ar nori knygos ieškoti pagal
+				ISBN kodą ar pagal raktažodžius (autorių ar pavadinimą). Vartotojas įveda ISBN kodą arba raktažodžius.
+				Sistema patikrina ar įvestis yra validi. Sistema naudodama vartotojo įvesti sukuria užklausą išorinei knygų duomenų bazei. 
+				Sistema gauna atsakyma ir parodo rastų knygų sąrašą. Vartotojas pasirenka vieną iš knygų. 
+				Sistema patikrina ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje ir knygą prideda.
+				Vartotojui parodomas pranešimas, kad knyga sėkmingai pridėta.
+
+				\textbf{Alternatyvūs scenarijai}
+				\begin{itemize}
+					\item Jei vartotojo įvestas ISBN kodas nėra validus, sistema vartotojui parodo pranešimą ir laukia naujos įvesties;
+					\item Jei dėl kokių nors priežasčių sistemai nepavyksta susisiekti su knygų duomenų baze, vartotojui parodomas pranešimas apie tai;
+					\item Jei knygų duomenų bazė neranda nei vienos knygos, naudodama vartotojo įvestį. Vartotojui apie tai pranešama. 
+						Vartotojas gali pakeisti įvestį ir ieškoti iš naujo;
+					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
+				\end{itemize}
+			\item Peržiūreti vartotojo puslapį;
 			\item Įkelti knygą į sistemą;
 			\item Ieškoti knygos įkeltų knygų kataloge;
 			\item Susisiekti su kitais vartotojais;
