@@ -137,7 +137,8 @@
 			\item Lankytojas - Asmuo apsilankęs tinklapyje (nebūtinai vartotojas);
 			\item Knyga - literatūros kūrinys, turintis ISBN kodą;
 			\item Įkelta knyga - į KKK sistemą ikelta knyga;
-			\item Knygų duomenų bazė - Duomenų bazė prie kurios sistema jungsis ieškodama knygų, tikrindama ISBN kodus;
+			\item Knygų duomenų bazė - Duomenų bazė prie kurios sistema jungsis ieškodama knygų, tikrindama ISBN kodus. 
+				Ši duomenų bazė KKK sistemai nepriklauso, bet su ja bus bendraujama per specifikuota API.
 			\item Knygų sąrašas - bet kokių knygų rinkinys;
 			\item Ikeltų knygų katalogas - sąrašas visų į KKK sistemą įkeltų knygų;
 			\item Knygos aprašymas - oficialus knygos aprašymas paimtas iš knygų duomenų bazės;
@@ -156,32 +157,50 @@
 	\subsection{Užduočių aprašymai}
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
-			\item Užsiregistruoti;		% leisti asocijuoti su soc. tinklo paskyra
+			\item \textbf{Užsiregistruoti};		% leisti asocijuoti su soc. tinklo paskyra
 			\item \textbf{Prisijungti;}
 			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
 				Vartotojas paspaudžia mygtuką "prideti knyga prie pageidavimų sąrašo". %TODO: liet. kabutes
+				Sistema vykdo užduotį "Ieškoti knygos knygų duomenų bazėje" (žr. U6).
+				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. 
+				Sistema patikrina ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje ir knygą prideda.
+				Vartotojui parodomas pranešimas, kad knyga sėkmingai pridėta.\\
+				\textbf{Alternatyvūs scenarijai:}
+				\begin{itemize}
+					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
+				\end{itemize}
+			\item \textbf{Įkelti knygą į sistemą;}
+				Vartotojas paspaudžia mygtuką "Įkelti knygą". Sistema vykdo užduotį "Ieškoti knygos knygų duomenų bazėje" (žr. U6).
+				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. Sistema sukuria užklausą pasirinktos knygos aprašymui gauti iš knygų duomenų bazės. 
+				Sistema gauna atsakymą su knygos aprašymu. Sistema parodo knygos pridejimo langą, 
+				kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knyga ir apie
+				savo turima egzempliorių. Vartotojas paspaudžia mygtuką "išsaugoti". Sistemą patikrina ar vartotojo įvestas komentaras nėra per ilgas.
+				Sistema išsaugo knyga ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
+				\textbf{Alternatyvūs scenarijai:}
+				\begin{itemize}
+					\item Jei sistemai nepavyksta susisiekti su knygų duomenų baze arba negaunamas atsakymas su knygos aprašymu, vartotojui parodomas pranešimas apie sutrikimą.
+					\item Jei vartotojo pridėtas komentaras yra per ilgas, vartotojui parodomas pranešimas apie tai.
+					\item Jei dėl kokių nors priežasčių knygos nepavyko išsaugoti įkeltų knygų saraše. Vartotojui parodomas pranešimas ir paprašoma bandyti vėliau.
+				\end{itemize}
+			\item \textbf{Ieškoti knygos įkeltų knygų kataloge;}
+			\item \textbf{Ieškoti knygos knygų duomenų bazėje}
+				Sistema vykdydama kita užduotis gauna komandą ieškoti knygos išorinėje knygų duomenų bazėje. 
 				Sistema vartotojui parodo knygos paieškos langą. Vartotojas pasirenka ar nori knygos ieškoti pagal
 				ISBN kodą ar pagal raktažodžius (autorių ar pavadinimą). Vartotojas įveda ISBN kodą arba raktažodžius.
 				Sistema patikrina ar įvestis yra validi. Sistema naudodama vartotojo įvesti sukuria užklausą išorinei knygų duomenų bazei. 
-				Sistema gauna atsakyma ir parodo rastų knygų sąrašą. Vartotojas pasirenka vieną iš knygų. 
-				Sistema patikrina ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje ir knygą prideda.
-				Vartotojui parodomas pranešimas, kad knyga sėkmingai pridėta.
-
-				\textbf{Alternatyvūs scenarijai}
+				Sistema gauna atsakyma ir patikrina ar buvo gauta bent viena knyga. Sistema parodo rastų knygų sąrašą.\\
+				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei vartotojo įvestas ISBN kodas nėra validus, sistema vartotojui parodo pranešimą ir laukia naujos įvesties;
 					\item Jei dėl kokių nors priežasčių sistemai nepavyksta susisiekti su knygų duomenų baze, vartotojui parodomas pranešimas apie tai;
 					\item Jei knygų duomenų bazė neranda nei vienos knygos, naudodama vartotojo įvestį. Vartotojui apie tai pranešama. 
 						Vartotojas gali pakeisti įvestį ir ieškoti iš naujo;
-					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
 				\end{itemize}
-			\item Peržiūreti vartotojo puslapį;
-			\item Įkelti knygą į sistemą;
-			\item Ieškoti knygos įkeltų knygų kataloge;
-			\item Susisiekti su kitais vartotojais;
-			\item Susisiekti su pardevėju;
-			\item Susisiekti su pirkėju;
-			\item Įvertinti mainus; % fiksuoti statistiką
+			\item \textbf{Peržiūreti vartotojo puslapį;}
+			\item \textbf{Susisiekti su kitais vartotojais;}
+			\item \textbf{Susisiekti su pardevėju;}
+			\item \textbf{Susisiekti su pirkėju;}
+			\item \textbf{Įvertinti mainus;} % fiksuoti statistiką
 			\item Pasiūlyti savo įkeltą knygą kitam vartotojui;
 		\end{enumerate}
 	\subsection{Reikalavimų - užduočių atsekamumo matrica}
