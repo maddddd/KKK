@@ -6,6 +6,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Įvadas}{2}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Darbo tikslas}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Dalykinė sritis}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Probleminė sritis}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Sistemos naudotojai}{2}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.}Reikalavimai}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.}Funkciniai reikalavimai}{3}

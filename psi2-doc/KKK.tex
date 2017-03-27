@@ -58,7 +58,7 @@ Laboratoriniame darbe apibrėžiami reikalavimai sistemai, struktūrinis dalykin
 Darbą įgyvendina Programų sistemų 2 kurso 5 grupės studentai Vidmantas Bakštys, Tadas Petrauskas, Tadas Vaitiekūnas.
 
 \sectionnonum{Įvadas}
-Šiame dokumente tobulinama programų sistemos "Knygų keitimosi klubas"(toliau - KKK) architektūra, remiantis ICONIX proceso pirmuoju žingsniu
+Šiame dokumente tobulinama programų sistemos "Knygų keitimosi klubas" (toliau - KKK) architektūra, remiantis ICONIX proceso pirmuoju žingsniu
 
 \subsection{Darbo tikslas}
 Remiantis ICONIX procesu, patobulinti esamą sistemą, suteikiant papildomo funkcionalumo vartotojui bei pilnai patenkinant užsakovo poreikius
@@ -85,24 +85,24 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\item Užsiregistravęs vartotojas gali prisijungti:
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Naudodamasis savo vartotojo vardu (arba elektroniniu paštu) ir slaptažodžiu;
-				\item Naudodamasis socialinio tinklo paskyrą;
+				\item Naudodamasis socialinio tinklo paskyra;
 			\end{enumerate}
 		\item Norimų gauti knygų sąrašas;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Kiekvienas registruotas vartotojas gali pridėti knygų prie savo sarašo;
-				\item Vartotojas gali įkelti knygą į savo saraša nurodydamas ISBN kodą;
+				\item Vartotojas gali įkelti knygą į savo sarašą nurodydamas ISBN kodą;
 				\item Vartotojas gali ieškoti knygos internete pagal pavadinimą ar autorių ir 
 					pasirinkęs ją įkelti į savo sarašą;
 				\item Sistema neleidžia įkelti neegzistuojančios knygos į savo sarašą;
-				\item Vartotojai gali matyti, savo ir kitų vartotojų sarašus;
-				\item Varotojui pranešti (el paštu) kada sistemoje atsiranda knyga esenti jo saraše;
+				\item Vartotojai gali matyti savo ir kitų vartotojų sąrašus;
+				\item Vartotojui pranešti (el. paštu) kada sistemoje atsiranda knyga, esanti jo saraše;
 		    \end{enumerate}
 		\item Knygos įkėlimas į sistemą;
 			\begin{enumerate}[label*=\textbf{.\arabic*}]
 				\item Vartotojas gali įkelti knygą įvesdamas knygos ISBN kodą;
 				\item Vartotojas gali ieškoti knygos pagal pavadinimą ar autorių ir 
 					pasirinkęs ją įkelti;
-				\item Sistemą leidžia vartotojui įkelti knygą tik jei knyga su tuo ISBN kodu egzistuoja;
+				\item Sistema leidžia vartotojui įkelti knygą tik jei knyga su tuo ISBN kodu egzistuoja;
 				\item Vartotojas gali pridėti komentarą apie savo įkeltą knygą;
 				\item Vartotojo pridėtos knygos puslapyje automatiškai pridėti oficialų aprašymą apie knygą;
 			\end{enumerate}
@@ -145,18 +145,18 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 
 	\subsection{Žodynas}
 		\begin{enumerate}[label=\textbf{E\arabic*.}]
-			\item Vartotojas - Asmuo užsiregistravęs (turintis paskyrą) sistemoje;
-			\item Lankytojas - Asmuo apsilankęs tinklapyje (nebūtinai vartotojas);
+			\item Vartotojas - Asmuo, užsiregistravęs (turintis paskyrą) sistemoje;
+			\item Lankytojas - Asmuo, apsilankęs tinklapyje (nebūtinai vartotojas);
 			\item Knyga - literatūros kūrinys, turintis ISBN kodą;
 			\item Įkelta knyga - į KKK sistemą ikelta knyga;
-			\item Knygų duomenų bazė - Duomenų bazė prie kurios sistema jungsis ieškodama knygų, tikrindama ISBN kodus. 
+			\item Knygų duomenų bazė - Duomenų bazė, prie kurios sistema jungsis ieškodama knygų, tikrindama ISBN kodus. 
 				Ši duomenų bazė KKK sistemai nepriklauso, bet su ja bus bendraujama per specifikuota API.
 			\item Knygų sąrašas - bet kokių knygų rinkinys;
 			\item Ikeltų knygų katalogas - sąrašas visų į KKK sistemą įkeltų knygų;
-			\item Knygos aprašymas - oficialus knygos aprašymas paimtas iš knygų duomenų bazės;
+			\item Knygos aprašymas - oficialus knygos aprašymas, paimtas iš knygų duomenų bazės;
 			\item Komentaras - Vartotojo komentaras apie savo įkeltą knygą;
 			\item Pageidavimų sąrašas - Sarašas knygų, kurias vartotojas norėtų įsigyti;
-			\item Vartotojo puslapis - vartotojo turimas paskyros puslapis kuriame patalpinta visa viešai matoma vartotojo informacija;
+			\item Vartotojo puslapis - vartotojo turimas paskyros puslapis, kuriame patalpinta visa viešai matoma vartotojo informacija;
 			\item Paieškos rezultatas - knygos paieškos knygų duomenų bazėje rezultatas, ar KKK sistemoje rezultatas;
 			\item Vartotojo statistika - Statistinė informacija apie vartotojo paskyrą: sėkmingų mainų skaičius, įkeltų knygų skaičius,
 				kitų vartotojų įvertinimai, įvertinimų vidurkis;
@@ -165,7 +165,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 
 	\subsection{Reikalavimų - esybių atsekamumo matrica}
 \section{Užduotys}
-	Šiame skyriuje pateikiamos sistemos atliekamos užduotys, jų pagrindiniai, bei alternatyvūs scenarijai.
+	Šiame skyriuje pateikiamos sistemos atliekamos užduotys, jų pagrindiniai bei alternatyvūs scenarijai.
 	%TODO: uzduociu uml
 	\subsection{Užduočių aprašymai}
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
@@ -173,45 +173,45 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item \textbf{Užsiregistruoti};		% leisti asocijuoti su soc. tinklo paskyra
 			\item \textbf{Prisijungti;}
 			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
-				Vartotojas paspaudžia mygtuką "prideti knyga prie pageidavimų sąrašo". %TODO: liet. kabutes
+				Vartotojas paspaudžia mygtuką "pridėti knygą prie pageidavimų sąrašo". %TODO: liet. kabutes
 				Sistema vykdo užduotį "Ieškoti knygos knygų duomenų bazėje" (žr. U6).
-				Vartotojas rastų knygų saraše pasirenka vieną iš knygų, ir paspaudžia mygtuką "pridėti pasirinktą knygą".
+				Vartotojas rastų knygų sąraše pasirenka vieną iš knygų, ir paspaudžia mygtuką "pridėti pasirinktą knygą".
 				Sistema vykdo užduotį "pridėti pasirinktą knygą prie pageidavimų sąrašo" (žr. U7).
 			\item \textbf{Įkelti knygą į sistemą;}\\
 				Vartotojas paspaudžia mygtuką "Įkelti knygą". Sistema vykdo užduotį "Ieškoti knygos knygų duomenų bazėje" (žr. U6).
 				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. Sistema sukuria užklausą pasirinktos knygos aprašymui gauti iš knygų duomenų bazės. 
-				Sistema gauna atsakymą su knygos aprašymu. Sistema parodo knygos pridejimo langą, 
-				kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knyga ir apie
-				savo turima egzempliorių. Vartotojas paspaudžia mygtuką "išsaugoti". Sistemą patikrina ar vartotojo įvestas komentaras nėra per ilgas.
+				Sistema gauna atsakymą su knygos aprašymu. Sistema parodo knygos pridėjimo langą, 
+				kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knygą ir apie
+				savo turimą egzempliorių. Vartotojas paspaudžia mygtuką "išsaugoti". Sistemą patikrina, ar vartotojo įvestas komentaras nėra per ilgas.
 				Sistema išsaugo knyga ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei sistemai nepavyksta susisiekti su knygų duomenų baze arba negaunamas atsakymas su knygos aprašymu, vartotojui parodomas pranešimas apie sutrikimą.
 					\item Jei vartotojo pridėtas komentaras yra per ilgas, vartotojui parodomas pranešimas apie tai.
-					\item Jei dėl kokių nors priežasčių knygos nepavyko išsaugoti įkeltų knygų saraše. Vartotojui parodomas pranešimas ir paprašoma bandyti vėliau.
+					\item Jei dėl kokių nors priežasčių knygos nepavyko išsaugoti įkeltų knygų saraše, vartotojui parodomas pranešimas ir paprašoma bandyti vėliau.
 				\end{itemize}
 			\item \textbf{Ieškoti knygos įkeltų knygų kataloge;}\\
-				Lankytojas paspaudžia mygtuką ieškoti knygos. Sistema parodo knygos ieškojimo langą.
-				Lankytojas pasirenka ar ieškoti pagal ISBN kodą ar pagal raktinius žodžius. 
-				Lankytojas įveda ISBN kodą arba raktažodžius. Sistema patikrina ar įvestis yra validi.
+				Lankytojas paspaudžia mygtuką "Ieškoti knygos". Sistema parodo knygos ieškojimo langą.
+				Lankytojas pasirenka, ar ieškoti pagal ISBN kodą, ar pagal raktinius žodžius. 
+				Lankytojas įveda ISBN kodą arba raktažodžius. Sistema patikrina, ar įvestis yra validi.
 				Sistema pagal vartotojo įvestį ieško knygos įkeltų knygų kataloge. 
 				Jei buvo rasta bent viena knyga, sistema parodo rastų knygų sąrašą vartotojui. Vartotojas pasirenka vieną iš rastų knygų.
 				Sistema parodo įkeltos knygos puslapį (žr. U8).\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
-					\item Jei lankytojo įvestis nėra validi, sistema parodo pranešima. Lankytojas įveda ISBN kodą arba raktažodžius iš naujo.
+					\item Jei lankytojo įvestis nėra validi, sistema parodo pranešimą. Lankytojas įveda ISBN kodą arba raktažodžius iš naujo.
 					\item Jei knyga nebuvo rasta įkeltų knygų kataloge, sistema parodo pranešimą, kad įkeltų knygų kataloge knyga nerasta 
-						ir atlieka paieška knygų duomenų bazėje, naudodama tą pačia vartotojo įvestį (žr. U6). Jei paieška buvo sėkminga ir buvo rasta bent viena knyga, 
+						ir atlieka paiešką knygų duomenų bazėje, naudodama tą pačią vartotojo įvestį (žr. U6). Jei paieška buvo sėkminga ir buvo rasta bent viena knyga, 
 						sistema rezultatų lange parodo rastų knygų sąrašą. Lankytojas pasirenka knygą iš rastų knygų sąrašo.
-						Sistema parodo informaciją apie knygą, jos aprašymą. Jei lankytojas yra vartotojas jis gali paspausti mygtuką "pridėti pasirinktą knygą prie pageidavimų sąrašo" (žr. U7).
+						Sistema parodo informaciją apie knygą, jos aprašymą. Jei lankytojas yra vartotojas, jis gali paspausti mygtuką "pridėti pasirinktą knygą prie pageidavimų sąrašo" (žr. U7).
 						Kitu atveju jam pasiūloma užsiregistruoti (žr. U1).
 				\end{itemize}
 			\item \textbf{Ieškoti knygos knygų duomenų bazėje}\\
-				Sistema vykdydama kita užduotis gauna komandą ieškoti knygos išorinėje knygų duomenų bazėje. 
-				Sistema vartotojui parodo knygos paieškos langą. Vartotojas pasirenka ar nori knygos ieškoti pagal
-				ISBN kodą ar pagal raktažodžius (autorių ar pavadinimą). Vartotojas įveda ISBN kodą arba raktažodžius.
-				Sistema patikrina ar įvestis yra validi. Sistema naudodama vartotojo įvesti sukuria užklausą išorinei knygų duomenų bazei. 
-				Sistema gauna atsakyma ir patikrina ar buvo gauta bent viena knyga. Sistema parodo rastų knygų sąrašą.\\
+				Sistema, vykdydama kitas užduotis, gauna komandą ieškoti knygos išorinėje knygų duomenų bazėje. 
+				Sistema vartotojui parodo knygos paieškos langą. Vartotojas pasirenka, ar nori knygos ieškoti pagal
+				ISBN kodą, ar pagal raktažodžius (autorių ar pavadinimą). Vartotojas įveda ISBN kodą arba raktažodžius.
+				Sistema patikrina, ar įvestis yra validi. Sistema, naudodama vartotojo įvestį, sukuria užklausą išorinei knygų duomenų bazei. 
+				Sistema gauna atsakymą ir patikrina, ar buvo gauta bent viena knyga. Sistema parodo rastų knygų sąrašą.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei vartotojo įvestas ISBN kodas nėra validus, sistema vartotojui parodo pranešimą ir laukia naujos įvesties;
@@ -220,8 +220,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 						Vartotojas gali pakeisti įvestį ir ieškoti iš naujo;
 				\end{itemize}
 			\item \textbf{Pridėti pasirinktą knygą prie pageidavimų sąrašo}\\
-				Sistema vykdydama kitas užduotis, gauna komanda pridėti pasirinktą knygą prie pageidavimų sąrašo.
-				Sistema patikrina ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje ir knygą prideda.
+				Sistema, vykdydama kitas užduotis, gauna komandą pridėti pasirinktą knygą prie pageidavimų sąrašo.
+				Sistema patikrina, ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje, ir knygą prideda.
 				Vartotojui parodomas pranešimas, kad knyga sėkmingai pridėta.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
@@ -239,7 +239,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 
 \section{Peržiūros metu rastos klaidos}
 	\begin{itemize}
-		\item 
+		\item Gramatinės - sudėti kableliai, pataisyti netaisyklingai parašyti skliaustai
+		\item Rašybos - įrašytos praleistos raidės ir sudėtos nosinės
 	\end{itemize}
 
 	
@@ -249,25 +250,25 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \begin{enumerate}
 	\item Leisti vartotojui prisijungti prie sistemos naudojant socialinių tinklų paskyras;
 	\item Leisti vartotojui užregistruoti knyga įvedant ISBN kodą;
-	\item Kiekvieną kartą vartotjui užregistruojant naują knygą, pagal ISBN koda patikrinti
+	\item Kiekvieną kartą vartotojui užregistruojant naują knygą, pagal ISBN kodą patikrinti,
 		ar knyga egzistuoja. Jei ne, knygos neužregistruoti;
-	\item Vartotojui užregistruojant naują knygą leisti ieškoti knygos pagal 
-		nebūtinai pilną pavadinimą arba autoriu;
+	\item Vartotojui užregistruojant naują knygą, leisti ieškoti knygos pagal 
+		nebūtinai pilną pavadinimą arba autorių;
 	\item Leisti ieškoti knygos sistemoje pagal ISBN kodą;
 	\item Kiekvienam vartotojui leisti susikurti savo norimų gauti knygų sarašą (wishlist);
 	\item Neradus ieškomos knygos sistemoje, pasiūlyti ją pridėti prie norimų gauti knygų sarašo;
-	\item Suteikti galimybe vartotojui pasiūlyti savo įkeltą knygą kitam vartotojui;
-	\item Suteikti galimybe vartotojui ieškoti kitų vartotojų, bei susisiekti su jais ne vien
+	\item Suteikti galimybę vartotojui pasiūlyti savo įkeltą knygą kitam vartotojui;
+	\item Suteikti galimybę vartotojui ieškoti kitų vartotojų bei susisiekti su jais ne vien
 		perkant iš jų knygas;
 	\item Vartotojo užregistruotos knygos puslapyje automatiškai pridėti knygos aprašymą
 		iš interneto;
 	\item Leisti pridėti savo komentarus prie savo įkeltos knygos (apie knygos kokybę,
 		pačią knyga ir panašiai);
-	\item Vartotojo paskyroje rodyt išsamią vartotojo statistiką (sėkmingų mainų skaičius,
+	\item Vartotojo paskyroje rodyti išsamią vartotojo statistiką (sėkmingų mainų skaičius,
 		įvertinimai);
-	\item Tinklapis turi būti pasiekiamas ir patogus naudoti, per mobilųjį įrenginį;
+	\item Tinklapis turi būti pasiekiamas ir patogus naudoti per mobilųjį įrenginį;
 	\item Turi būti užtikrintas duomenų vientisumas duomenų bazėje;
-	\item Turi būti užtikrinta galimybė atkurti duomenų bazės duomenis, įvykus sutrikimams;
+	\item Turi būti užtikrinta galimybė atkurti duomenų bazės duomenis įvykus sutrikimams;
 	\item Turi būti sukurta sistemos administravimo dokumentacija;
 \end{enumerate}
 
@@ -279,6 +280,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \sectionnonum{Šaltinių sąrašas}
 	\begin{itemize}
 		\item http://www.mif.vu.lt/~karolis/PSI2.html
+		\item Don Rosenberg, Matt Stephens: Use Case Driven Object Modeling with UML: Theory and Practice, 2007
 	\end{itemize}
 
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
