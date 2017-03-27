@@ -26,18 +26,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.}Žodynas}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{6}
+\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Užduotys}{7}
+\contentsline {section}{\numberline {3.}Užduotys}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{7}
+\contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{10}
+\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{11}
+\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{12}
+\contentsline {section}{Priedai}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{12}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{13}
+\contentsline {section}{Šaltinių sąrašas}{14}
