@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 08:54
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,8 +979,7 @@ Package biblatex Info: ... file 'lithuanian.lbx' found.
 (./lithuanian.lbx
 File: lithuanian.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)$Id: lithu
 anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
-)
-No file KKK.aux.
+) (./KKK.aux)
 \openout1 = `KKK.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -999,7 +998,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 45.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 45.
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 45.
@@ -1190,26 +1189,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--236
 ] [12
 
 ] (./KKK.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                KKK
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'KKK.run.xml'.
 \openout1 = `KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25272 strings out of 493638
- 466773 string characters out of 6146796
- 829864 words of memory out of 5000000
- 28377 multiletter control sequences out of 15000+600000
+ 25273 strings out of 493638
+ 466770 string characters out of 6146796
+ 829888 words of memory out of 5000000
+ 28376 multiletter control sequences out of 15000+600000
  16590 words of font info for 83 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,11n,96p,10492b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
