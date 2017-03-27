@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 12:08
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,7 +1156,7 @@ File: img/DomainModel.png Graphic file (type QTm)
 ! Missing } inserted.
 <inserted text> 
                 }
-l.307 ^^I^^I^^I\end{enumerate}
+l.324 ^^I^^I^^I\end{enumerate}
                               
 ? 
 [11] [12
@@ -1166,15 +1166,18 @@ l.307 ^^I^^I^^I\end{enumerate}
 ] [14
 
 ] (./KKK.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'KKK.run.xml'.
 \openout1 = `KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25289 strings out of 493638
- 467044 string characters out of 6146796
- 833935 words of memory out of 5000000
- 28386 multiletter control sequences out of 15000+600000
+ 25291 strings out of 493638
+ 467094 string characters out of 6146796
+ 833945 words of memory out of 5000000
+ 28388 multiletter control sequences out of 15000+600000
  18159 words of font info for 90 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,11n,96p,10492b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
