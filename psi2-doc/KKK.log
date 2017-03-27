@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 09:34
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.3.27)  27 MAR 2017 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,54 +1152,42 @@ File: img/DomainModel.png Graphic file (type QTm)
 
 ] [6] [7
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-
- []
-
-[9] [10
-
-] [11
+] [8] [9]
+! Missing } inserted.
+<inserted text> 
+                }
+l.282 ^^I^^I^^I\end{enumerate}
+                              
+? 
+[10] [11
 
 ] [12
 
+] [13
+
 ] (./KKK.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                KKK
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'KKK.run.xml'.
 \openout1 = `KKK.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25273 strings out of 493638
- 466770 string characters out of 6146796
- 829888 words of memory out of 5000000
- 28376 multiletter control sequences out of 15000+600000
- 16590 words of font info for 83 fonts, out of 8000000 for 9000
+ 25233 strings out of 493638
+ 466253 string characters out of 6146796
+ 833864 words of memory out of 5000000
+ 28350 multiletter control sequences out of 15000+600000
+ 9466 words of font info for 56 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,11n,96p,10492b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on KKK.pdf (14 pages).
+Output written on KKK.pdf (15 pages).
