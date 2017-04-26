@@ -262,7 +262,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 						\end{itemize}
 				\end{itemize}
 			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
-				Vartotojas paspaudžia mygtuką „prideti knyga prie pageidavimų sąrašo“. 
+				Vartotojas budamas pagrindiniame puslapyje paspaudžia mygtuką „prideti knyga prie pageidavimų sąrašo“. 
 				Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
 				Vartotojas rastų knygų saraše pasirenka vieną iš knygų, ir paspaudžia mygtuką „pridėti pasirinktą knygą“.
 				Sistema vykdo užduotį „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
@@ -369,6 +369,33 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\item Vartotojas savo nuožiūra gali siūlyti savo knygas kitų knygų puslapiuose, jei mano, kad jo knyga yra susijusi ir gali sudominti pirkėjus.
 				\end{itemize}
 		\end{enumerate}
+	\subsection{Robastiškumo analizė}
+		Robastiškumo analizės tikslas - susieti užduotis su objektais (esybėmis), sistemos funkcijomis ir 
+		interfeiso elementais. Taip pat yra patikrinamas ir jei reikia pataisomas užduočių tekstas ir statinis sistemos modelis.
+		Toliau pateikiamos robastiškumo diagramos kiekvienai užduočiai.
+		\begin{enumerate}[label=\textbf{U\arabic*.}]
+			\item \textbf{Užsiregistruoti};		
+			\item \textbf{Prisijungti;}
+			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.9]{img/U3.png}
+					\caption{U3 robastiškumo diagrama}
+					\label{img:psi2-u3-robustness}
+				\end{figure}
+			\item \textbf{Įkelti knygą į sistemą;}
+			\item \textbf{Ieškoti knygos įkeltų knygų kataloge;}
+			\item \textbf{Ieškoti knygos knygų duomenų bazėje}
+			\item \textbf{Pridėti pasirinktą knygą prie pageidavimų sąrašo}
+			\item \textbf{Peržiūreti vartotojo puslapį;}
+			\item \textbf{Peržiūrėti įkeltos knygos puslapį}
+			\item \textbf{Susisiekti su kitais vartotojais;}
+			\item \textbf{Susisiekti su pardavėju;}
+			\item \textbf{Susisiekti su pirkėju;}
+			\item \textbf{Įvertinti mainus;}
+			\item \textbf{Pasiūlyti savo įkeltą knygą kitam vartotojui;}
+		\end{enumerate}
+
 	\subsection{Reikalavimų - užduočių atsekamumo matrica}\label{strukturinisDSModelis_matrica}
 		Reikalavimų - užduočiu atsekamumo matricos (žr 2 lentelė) paskirtis - kiekvianam reikalavimui
 		priskirti jį vykdančias užduotis. Kiekviana aprašoma užduotis turi vykdyti kurį nors reikalavimą ir

@@ -32,16 +32,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{13}
+\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{15}
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Reikalavimų peržiūra}{15}
+\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Preliminari projekto peržiūra}{15}
+\contentsline {subsection}{\numberline {4.1.}Reikalavimų peržiūra}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{16}
+\contentsline {subsection}{\numberline {4.2.}Preliminari projekto peržiūra}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{16}
+\contentsline {section}{Priedai}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{17}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Šaltinių sąrašas}{18}
