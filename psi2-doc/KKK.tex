@@ -28,7 +28,7 @@
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
-\papertype{Reikalavimų specifikacija}
+\papertype{Reikalavimų specifikacija, analizė ir techninė struktūra}
 \title{Knygų keitimosi klubas}
 \titleineng{}
 \status{2 kurso 5 grupės studentai}
@@ -136,6 +136,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 	Šiame skyriuje pateikiamas struktūrinis nagrinėjamos dalykinės srities modelis. 
 	Modelis pateikiamas UML klasių diagramomis kartu su žodynu - sąrašu esybių su jų aprašymais. 
 	\subsection{Esybės}
+		Dalykinės srities modelis pateikiamas klasių diagrama (žr. 1 pav.). Ši klasių diagrama yra
+		preliminari ir neatspindi visų galutinės sistemos klasių.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.7]{img/DomainModel.png}
@@ -144,6 +146,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\end{figure}
 
 	\subsection{Žodynas}
+		Pateikiami sistemos toliau tekste vartojami esybių pavadinimai su aprašymais:
 		\begin{enumerate}[label=\textbf{E\arabic*.}]
 			\item Vartotojas - Asmuo, užsiregistravęs (turintis paskyrą) sistemoje;
 			\item Lankytojas - Asmuo, apsilankęs tinklapyje (nebūtinai vartotojas);
@@ -164,6 +167,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\end{enumerate}
 
 	\subsection{Reikalavimų - esybių atsekamumo matrica}\label{strukturinisDSModelis_matrica}
+		Reikalavimų - esybių atsekamumo matrica (žr. 1 lentelė) yra skirta atsekti kuri esybė vykdo kuriuos reikalavimus.
+		Kiekviena esybė turi vykdyti bent po vieną reikalavimą ir kiekvienas reikalavimas turi turėti bent po vieną esybę.
 			\begin{table}[H]\footnotesize
   \centering
   \caption{Reikalavimų - esybių atsekamumo matrica}
@@ -212,9 +217,12 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\label{img:psi2-use-case}
 	\end{figure}
 	\subsection{Užduočių aprašymai}
+		Toliau pateikiami visų, funkcinius reikalavimus vykdančių užduočių, aprašymai. 
+		Aprašymų tikslas - aprašyti ką sistema turi daryti, vartotojui norint įvykdyti vieną ar kitą užduotį,
+		todėl jie yra pateikiami vartotojo užklausos, sistemos atsakymo atsakymo forma.
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
-			\item \textbf{Užsiregistruoti};		% leisti asocijuoti su soc. tinklo paskyra
+			\item \textbf{Užsiregistruoti};		
 				Lankytojas paspaudžia mygtuką „užsiregistruoti.“ Sistema parodo registracijos langą, kuriame yra registracijos forma.
 				Lankytojas suveda savo pasirinktą vartotojo vardą, elektroninį paštą, bei slaptažodį, taip pat jei nori, 
 				papildomą informaciją: gyvenamąją vietą, amžių. Tada lankytojas paspaudžia „patvirtinti.“ 
@@ -362,6 +370,9 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				\end{itemize}
 		\end{enumerate}
 	\subsection{Reikalavimų - užduočių atsekamumo matrica}\label{strukturinisDSModelis_matrica}
+		Reikalavimų - užduočiu atsekamumo matricos (žr 2 lentelė) paskirtis - kiekvianam reikalavimui
+		priskirti jį vykdančias užduotis. Kiekviana aprašoma užduotis turi vykdyti kurį nors reikalavimą ir
+		kiekvianas reikalavimas turi būti vykdomas bent vienos užduoties.
 \begin{table}[H]\footnotesize
   \centering
   \caption{Reikalavimų - užduočių atsekamumo matrica}
@@ -402,10 +413,20 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \end{table}
 
 \section{Peržiūros metu rastos klaidos}
-	\begin{itemize}
-		\item Gramatinės - sudėti kableliai, pataisyti netaisyklingai parašyti skliaustai;
-		\item Rašybos - įrašytos praleistos raidės ir sudėtos nosinės;
-	\end{itemize}
+	Vykdant projektą kiekvianame etape yra vykdomos įvairių tipų peržiūros.
+	Toliau pateikiamos šių peržiūrų metu rastos klaidos.
+	\subsection{Reikalavimų peržiūra}
+		Ši peržiūra yra vykdoma apsibrėžus reikalavimus, užduotis, bei stuktūrinį dalykinės srities modelį.
+		\begin{itemize}
+			\item Gramatinės - sudėti kableliai, pataisyti netaisyklingai parašyti skliaustai;
+			\item Rašybos - įrašytos praleistos raidės ir sudėtos nosinės;
+		\end{itemize}
+	\subsection{Preliminari projekto peržiūra}
+		Ši peržiūra yra vykdoma, atlikus robastiškumo analizę.	%TODO: add more
+		\begin{itemize}
+			\item Prie kiekvieno skyrelio pridėtas jo aprašymas, paskirtis;
+		\end{itemize}
+
 
 	
 \setcounter{secnumdepth}{0}

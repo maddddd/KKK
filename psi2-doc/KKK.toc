@@ -26,15 +26,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.}Žodynas}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{7}
+\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.}Užduotys}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{14}
+\contentsline {subsection}{\numberline {3.2.}Reikalavimų - užduočių atsekamumo matrica}{13}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Reikalavimų peržiūra}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Preliminari projekto peržiūra}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Priedai}{16}
 \defcounter {refsection}{0}\relax 

@@ -2,7 +2,7 @@ generuoti:
 	xelatex KKK.tex
 	biber KKK
 	xelatex KKK.tex
-	xdg-open KKK.pdf
+	evince KKK.pdf &
 
 ubuntu:
 	echo "Diegiamas LaTeX (PdfLaTeX, XeTeX ir kt.)"
