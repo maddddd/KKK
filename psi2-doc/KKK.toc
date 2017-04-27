@@ -36,14 +36,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{19}
+\contentsline {section}{\numberline {4.}Peržiūros metu rastos klaidos}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Reikalavimų peržiūra}{19}
+\contentsline {subsection}{\numberline {4.1.}Reikalavimų peržiūra}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Preliminari projekto peržiūra}{19}
+\contentsline {subsection}{\numberline {4.2.}Preliminari projekto peržiūra}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{20}
+\contentsline {section}{Priedai}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{20}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{21}
+\contentsline {section}{Šaltinių sąrašas}{22}
