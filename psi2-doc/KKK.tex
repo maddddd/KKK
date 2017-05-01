@@ -220,62 +220,62 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\label{img:psi2-use-case}
 	\end{figure}
 	\subsection{Užduočių aprašymai}
-		Toliau pateikiami visų, funkcinius reikalavimus vykdančių užduočių, aprašymai. 
-		Aprašymų tikslas - aprašyti ką sistema turi daryti, vartotojui norint įvykdyti vieną ar kitą užduotį,
-		todėl jie yra pateikiami vartotojo užklausos, sistemos atsakymo atsakymo forma.
+		Toliau pateikiami visų funkcinius reikalavimus vykdančių užduočių aprašymai. 
+		Aprašymų tikslas - aprašyti ką sistema turi daryti vartotojui norint įvykdyti vieną ar kitą užduotį,
+		todėl jie yra pateikiami vartotojo užklausos - sistemos atsakymo forma.
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
 			\item \textbf{Užsiregistruoti};		
 				Lankytojas, būdamas pagrindiniame puslapyje, paspaudžia mygtuką „užsiregistruoti.“ Sistema parodo registracijos langą, kuriame yra registracijos forma.
-				Lankytojas suveda savo pasirinktą vartotojo vardą, elektroninį paštą, bei slaptažodį, taip pat jei nori, 
+				Lankytojas suveda savo pasirinktą vartotojo vardą, elektroninį paštą bei slaptažodį, taip pat, jei nori, 
 				papildomą informaciją: gyvenamąją vietą, amžių. Tada lankytojas paspaudžia „patvirtinti.“ 
-				Sistema patikrina ar įvesta informacija yra tinkama, sukuria naują vartotojo paskyrą, ir prideda ją prie vartotojų sąrašo duomenų bazėje.
-				Sistema išsiunčia patvirtinimo laiška nurodytu el. paštu. 
-				Lankytojas patvirtina, savo registraciją paspausdamas nuorodą, gautame laiške. Sistema, gavusi patvirtinimą, išsaugo vartotoją duomenų bazėje kaip patvirtintą,
-				pakeičia lankytojo statusą į prisijungusį, bei parodo pagrindinį tinklapio puslapį.\\
+				Sistema patikrina, ar įvesta informacija yra tinkama, sukuria naują vartotojo paskyrą ir prideda ją prie vartotojų sąrašo duomenų bazėje.
+				Sistema išsiunčia patvirtinimo laišką nurodytu el. paštu. 
+				Lankytojas patvirtina savo registraciją paspausdamas nuorodą gautame laiške. Sistema, gavusi patvirtinimą, išsaugo vartotoją duomenų bazėje kaip patvirtintą,
+				pakeičia lankytojo statusą į prisijungusį bei parodo pagrindinį tinklapio puslapį.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei lankytojo suvesta informacija nėra tinkama, sistema parodo pranešimą apie tai, nurodydama kurios įvestys nėra tinkamos.
 					\item Jei vartotojo paskyra nėra patvirtinama per 24 valandas, sistema panaikina vartotojo paskyrą duomenų bazėje.
-					\item Jei lankytojas registracijos formoje paspaudžia mygtuką „tęsti su facebook,“ sistema inicijuoja registracija per soc. tinklą.
+					\item Jei lankytojas registracijos formoje paspaudžia mygtuką „tęsti su facebook“, sistema inicijuoja registraciją per soc. tinklą.
 	                    Naršyklė lankytojo paprašo patvirtinti, kad leidžia perduoti facebook vartotojo duomenis sistemai.
-						Sistema gauna pagrindinę vartotojo informacija iš facebook, bei sukuria naują vartotojo paskyrą duomenų bazėje.
-						Sistema pakeičia lankytojo statusą į prisijungusį, bei parodo pagrindinį puslapį.
+						Sistema gauna pagrindinę vartotojo informacija iš "Facebook" bei sukuria naują vartotojo paskyrą duomenų bazėje.
+						Sistema pakeičia lankytojo statusą į prisijungusį bei parodo pagrindinį puslapį.
 						\begin{itemize}
-							\item Jei lankytojas nėra prisijungęs prie facobook naršyklėje, jis nukreipiamas į facebook prisijungimo langą. 
+							\item Jei lankytojas nėra prisijungęs prie "Facebook" naršyklėje, jis nukreipiamas į "Facebook" prisijungimo langą. 
 								Lankytojas prisijungia, tuomet sistema tęsia registracijos procesą.
-							\item Jei įvyksta sutrikimai asocijuojant lankytoją su facebook paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
+							\item Jei įvyksta sutrikimai asocijuojant lankytoją su "Facebook" paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
 								sistema vartotoją gražina į registracijos puslapį.
 						\end{itemize}
 				\end{itemize}
 			\item \textbf{Prisijungti;}
-				Budamas pagrindiniame puslapyje, lankytojas įveda savo vartotojo vardą ar (elektroninį paštą) ir slaptažodį i tam skirtus laukelius, bei spaudžia prisijungti.
-				Sistema patikrina ar vartotojas su tokiu prisijungimo vardu ar el. paštu yra vartotojų sąraše duomenų bazėje.
-				Tada sistema patikrina ar įvestas slaptažodis yra vartotojo. Sistema pakeičia lankytojo statusą į prisijungusį ir parodo pagrindinį puslapį.\\
+				Būdamas pagrindiniame puslapyje, lankytojas įveda savo vartotojo vardą (ar elektroninį paštą) ir slaptažodį į tam skirtus laukelius bei spaudžia prisijungti.
+				Sistema patikrina, ar vartotojas su tokiu prisijungimo vardu arba el. paštu yra vartotojų sąraše duomenų bazėje.
+				Tada sistema patikrina, ar įvestas slaptažodis yra vartotojo. Sistema pakeičia lankytojo statusą į prisijungusį ir parodo pagrindinį puslapį.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
-					\item Jei vartotojas su tokiais duomenimis nerastas pranešimas apie tai;
+					\item Jei vartotojas su tokiais duomenimis nerastas, apie tai išsiunčiamas pranešimas;
 					\item Jei vartotojo slaptažodis neteisingas, jam parodomas pranešimas apie tai ir leidžiama bandyti dar kartą;
-					\item Jei lankytojas paspaudžia mygtuką „prisijungti su facebook“ sistema inicijuoja prisijungimą per facebook;
+					\item Jei lankytojas paspaudžia mygtuką „prisijungti su facebook“, sistema inicijuoja prisijungimą per "Facebook";
 						\begin{itemize}
-							\item Jei lankytojas nėra prisijungęs prie facobook naršyklėje, jis nukreipiamas į facebook prisijungimo langą. 
+							\item Jei lankytojas nėra prisijungęs prie "Facebook" naršyklėje, jis nukreipiamas į "Facebook" prisijungimo langą. 
 								Lankytojas prisijungia, tuomet sistema tęsia prisijungimo procesą;
-							\item Jei įvyksta sutrikimai asocijuojant lankytoją su facebook paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
+							\item Jei įvyksta sutrikimai asocijuojant lankytoją su "Facebook" paskyra arba lankytojas atsisako patvirtinti informacijos perdavimą,
 								sistema vartotoją gražina į pagrindinį puslapį;
-							\item Jei lankytojo facebook paskyra nėra asocijuota su jokiu KKK sistemos vartotoju, sistema inicijuoja vartotojo registraciją per facebook (žr. U1: alternatyvūs scenarijai);
+							\item Jei lankytojo "Facebook" paskyra nėra asocijuota su jokiu KKK sistemos vartotoju, sistema inicijuoja vartotojo registraciją per "Facebook" (žr. U1: alternatyvūs scenarijai);
 						\end{itemize}
 				\end{itemize}
 			\item \textbf{Pridėti knygą prie pageidavimų sąrašo;} \\
-				Vartotojas būdamas pagrindiniame puslapyje paspaudžia mygtuką „prideti knyga prie pageidavimų sąrašo“. 
+				Vartotojas, būdamas pagrindiniame puslapyje, paspaudžia mygtuką „pridėti knygą prie pageidavimų sąrašo“. 
 				Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
-				Vartotojas rastų knygų saraše pasirenka vieną iš knygų, ir paspaudžia mygtuką „pridėti pasirinktą knygą“.
+				Vartotojas rastų knygų saraše pasirenka vieną iš knygų ir paspaudžia mygtuką „pridėti pasirinktą knygą“.
 				Sistema vykdo užduotį „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
 			\item \textbf{Įkelti knygą į sistemą;}\\
 				Vartotojas, būdamas pagrindiniame puslapyje, paspaudžia mygtuką „Įkelti knygą“. Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
-				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. Sistema iš knygų sąrašo paima pasirinktą knygą, ir paima jos aprašymą.
-				Sistema parodo knygos pridejimo langą, kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knyga ir apie
-				savo turimą egzempliorių. Vartotojas paspaudžia mygtuką „išsaugoti“. Sistemą patikrina ar vartotojo įvestas komentaras nėra per ilgas.
-				Sistema išsaugo knyga ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
+				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. Sistema iš knygų sąrašo paima pasirinktą knygą ir paima jos aprašymą.
+				Sistema parodo knygos pridėjimo langą, kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knygą ir apie
+				savo turimą egzempliorių. Vartotojas paspaudžia mygtuką „išsaugoti“. Sistema patikrina, ar vartotojo įvestas komentaras nėra per ilgas.
+				Sistema išsaugo knygą ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei sistemai nepavyksta susisiekti su knygų duomenų baze arba negaunamas atsakymas su knygos aprašymu, vartotojui parodomas pranešimas apie sutrikimą.
@@ -295,7 +295,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\item Jei knyga nebuvo rasta įkeltų knygų kataloge, sistema parodo pranešimą, kad įkeltų knygų kataloge knyga nerasta 
 						ir atlieka paiešką knygų duomenų bazėje, naudodama tą pačią vartotojo įvestį (žr. U6). Jei paieška buvo sėkminga ir buvo rasta bent viena knyga, 
 						sistema rezultatų lange parodo rastų knygų sąrašą. Lankytojas pasirenka knygą iš rastų knygų sąrašo.
-						Sistema parodo informaciją apie knygą, jos aprašymą. Jei lankytojas yra vartotojas jis gali paspausti mygtuką „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
+						Sistema parodo informaciją apie knygą, jos aprašymą. Jei lankytojas yra vartotojas, jis gali paspausti mygtuką „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
 						Kitu atveju jam pasiūloma užsiregistruoti (žr. U1).
 				\end{itemize}
 			\item \textbf{Ieškoti knygos knygų duomenų bazėje}\\
@@ -307,8 +307,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei lankytojo įvestas ISBN kodas nėra validus, sistema parodo pranešimą ir laukia naujos įvesties;
-					\item Jei, dėl kokių nors priežasčių, sistemai nepavyksta susisiekti su knygų duomenų baze, arba 
-						gautas neigiamas atsakymas arba nerasta nei vienos knygos, lankytojui parodomas pranešimas apie tai;
+					\item Jei dėl kokių nors priežasčių sistemai nepavyksta susisiekti su knygų duomenų baze arba 
+						gautas neigiamas atsakymas ar nerasta nei viena knyga, lankytojui parodomas pranešimas apie tai;
 					\item Jei knygų duomenų bazė neranda nei vienos knygos, naudodama lankytojo įvestį, vartotojui apie tai pranešama. 
 						Lankytojas gali pakeisti įvestį ir ieškoti iš naujo;
 				\end{itemize}
@@ -318,11 +318,11 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				Vartotojui parodomas pranešimas, kad knyga sėkmingai pridėta.\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
-					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
+					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui apie tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
 				\end{itemize}
 			\item \textbf{Peržiūreti vartotojo puslapį;}\\
 				Vartotojas paspaudžia paryškintą kito vartotojo vardą prie skelbimo ir yra nukreipiamas į pasirinktojo vartotojo puslapį, kuriame mato pasirinktojo vartotojo statistiką, siūlomas knygas bei komentarus. 
-				Vartotojo puslapyje kitas vartotojas, paspaudęs mygtuką „siulyti knygą“, gali pirmajam vartotojui pasiūlyti pirkti knygą iš savo parduodamų knygų sąrašo.
+				Vartotojo puslapyje kitas vartotojas, paspaudęs mygtuką „siūlyti knygą“, gali pirmajam vartotojui pasiūlyti pirkti knygą iš savo parduodamų knygų sąrašo.
 				Vartotojo puslapyje kitam vartotojui, paspaudusiam mygtuką „siųsti laišką", atsiveria langas su „Pavadinimo"" ir „Teksto“ laukais. Užpildęs laukus, vartotojas gali išsiųsti vartotojo puslapio savininkui laišką. 
 				Vartotojo puslapyje vartotojas gali įvertinti vartotoją - puslapio savininką kaip knygos pardavėją reitingu žvaigždutėmis (nuo 1 iki 5).
 				Vartotojas - puslapio savininkas negali ištrinti kitų vartotojų įvertinimų, jų vidurkis pateikiamas viešai vartotojo puslapyje.\\
@@ -335,7 +335,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item \textbf{Peržiūrėti įkeltos knygos puslapį}\\
 				Vartotojui paspaudus paryškintą knygos pavadinimą kito vartotojo knygų sąrašo ar paieškos puslapyje, sistema nukreipia vartotoją į pasirinktosios knygos puslapį.
 				Knygos puslapyje vartotojas mato knygos informaciją, isbn kodą, autorių, knygos savininkų paliktus komentarus (apie knygos būklę ir t.t.) bei kitų vartotojų komentarus.
-				Vartotojas knygos puslapyje gali palikti savo komentarą, užpildęs „Pavadinimo“ ir „Teksto“ laukus bei paspaudęs mygtuką „siųsti komentarą“. Vartotojas taip pat gali palikti knygos įvertinimą žvaigždutėmis (nuo 1 iki 5).\\
+				Vartotojas knygos puslapyje gali palikti savo komentarą, užpildęs „Pavadinimo“ ir „Teksto“ laukus bei paspaudęs mygtuką „Siųsti komentarą“. Vartotojas taip pat gali palikti knygos įvertinimą žvaigždutėmis (nuo 1 iki 5).\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei knygos puslapis nepasiekiamas, nebeegzistuoja ar įvyko sistemos klaida, vartotojui apie tai pranešama ir jis lieka esamame puslapyje.
@@ -366,7 +366,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\item Vartotojas gali parašyti komentarą knygos puslapyje ar vartotojo (pardavėjo) puslapyje.
 				\end{itemize}
 			\item \textbf{Pasiūlyti savo įkeltą knygą kitam vartotojui;}
-				Vartotojas gali pasiulyti knygą kitam vartotojui šio vartotojo puslapyje paspaudęs mygtuką „Siūlyti knygą“(žr. U8).\\
+				Vartotojas gali pasiūlyti knygą kitam vartotojui šio vartotojo puslapyje paspaudęs mygtuką „Siūlyti knygą“(žr. U8).\\
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Vartotojas gali kreiptis į kitą vartotoją laišku šio vartotojo puslapyje (žr. U8).
@@ -428,12 +428,54 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\label{img:psi2-u7-robustness}
 				\end{figure}
 			\item \textbf{Peržiūreti vartotojo puslapį;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U8.png}
+					\caption{U8 robastiškumo diagrama}
+					\label{img:psi2-u8-robustness}
+				\end{figure}
 			\item \textbf{Peržiūrėti įkeltos knygos puslapį}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U9.png}
+					\caption{U9 robastiškumo diagrama}
+					\label{img:psi2-u9-robustness}
+				\end{figure}
 			\item \textbf{Susisiekti su kitais vartotojais;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U10.png}
+					\caption{U10 robastiškumo diagrama}
+					\label{img:psi2-u10-robustness}
+				\end{figure}
 			\item \textbf{Susisiekti su pardavėju;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U11.png}
+					\caption{U11 robastiškumo diagrama}
+					\label{img:psi2-u11-robustness}
+				\end{figure}
 			\item \textbf{Susisiekti su pirkėju;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U12.png}
+					\caption{U12 robastiškumo diagrama}
+					\label{img:psi2-u12-robustness}
+				\end{figure}
 			\item \textbf{Įvertinti mainus;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U13.png}
+					\caption{U13 robastiškumo diagrama}
+					\label{img:psi2-u13-robustness}
+				\end{figure}
 			\item \textbf{Pasiūlyti savo įkeltą knygą kitam vartotojui;}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{img/U14.png}
+					\caption{U14 robastiškumo diagrama}
+					\label{img:psi2-u14-robustness}
+				\end{figure}
 		\end{enumerate}
 
 	\subsection{Reikalavimų - užduočių atsekamumo matrica}\label{strukturinisDSModelis_matrica}
@@ -491,10 +533,10 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				Jis nusprendžia kokius puslapius rodyti ir reaguoja į lankytojo įvestis; 
 		\end{itemize}
 		Duomenų ir duomenų saugojimo paketai sudaro modelio dalį MVC šablone.
-		Komponentai sudarantys duomenų paketą yra atsakingi už sistemos logiką.
-		Duomenų saugojimo paketą sudaro komponentai, atsakingi už duomenų pakete sukurtų objektų išsaugojimą duomenų bazėje,
-		bei už prieiga prie išorinės knygų duomenų bazės (naudojant pvz. google books api). 
-		Visi komponentai yra vaizduojami komponentų diagramoje (žr.	%FIXME: add reference to img
+		Komponentai, sudarantys duomenų paketą, yra atsakingi už sistemos logiką.
+		Duomenų saugojimo paketą sudaro komponentai, atsakingi už duomenų pakete sukurtų objektų išsaugojimą duomenų bazėje
+		bei už prieigą prie išorinės knygų duomenų bazės (naudojant pvz. google books api). 
+		Visi komponentai yra vaizduojami komponentų diagramoje (žr. 17 pav.).	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.8]{img/Component.png}
@@ -502,9 +544,9 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\label{img:psi2-component}
 		\end{figure}
 	\subsection{Sistemos komponentų išdėstymas tinkle}
-		Sistemos komponentų išdėstymą vykdymo aplinkose vaizduoja diegimo diagrama (žr. ).	%FIXME: add reference to img
+		Sistemos komponentų išdėstymą vykdymo aplinkose vaizduoja diegimo diagrama (žr. 18 pav.).
 		Sistemai įgyvendinti reikia web serverio, duomenų bazės bei išorinės (KKK sistemai nepriklausančios) 
-		knygų duomenų bazės, kurios prieeinamumas būtu pakankamas.
+		knygų duomenų bazės, kurios prieeinamumas būtų pakankamas.
 		Tinklapis turėtų būti prienamas naudojant bet kokią kompiuterio ar mobiliojo įrenginio naršyklę.
 		\begin{figure}[H]
 			\centering
@@ -516,7 +558,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 
 
 \section{Peržiūros metu rastos klaidos}
-	Vykdant projektą kiekvianame etape yra vykdomos įvairių tipų peržiūros.
+	Vykdant projektą kiekviename etape yra vykdomos įvairių tipų peržiūros.
 	Toliau pateikiamos šių peržiūrų metu rastos klaidos.
 	\subsection{Reikalavimų peržiūra}
 		Ši peržiūra yra vykdoma apsibrėžus reikalavimus, užduotis, bei stuktūrinį dalykinės srities modelį.
@@ -540,8 +582,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \subsection{Užsakovo reikalavimai sistemai}
 \begin{enumerate}
 	\item Leisti vartotojui prisijungti prie sistemos naudojant socialinių tinklų paskyras;
-	\item Leisti vartotojui užregistruoti knyga įvedant ISBN kodą;
-	\item Kiekvieną kartą vartotojui užregistruojant naują knygą, pagal ISBN kodą patikrinti,
+	\item Leisti vartotojui užregistruoti knygą įvedant ISBN kodą;
+	\item Kiekvieną kartą vartotojui užregistruojant naują knygą patikrinti pagal ISBN kodą,
 		ar knyga egzistuoja. Jei ne, knygos neužregistruoti;
 	\item Vartotojui užregistruojant naują knygą, leisti ieškoti knygos pagal 
 		nebūtinai pilną pavadinimą arba autorių;

@@ -34,22 +34,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{20}
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{22}
+\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{22}
+\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{24}
+\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Peržiūros metu rastos klaidos}{25}
+\contentsline {section}{\numberline {5.}Peržiūros metu rastos klaidos}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.}Reikalavimų peržiūra}{25}
+\contentsline {subsection}{\numberline {5.1.}Reikalavimų peržiūra}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.}Preliminari projekto peržiūra}{25}
+\contentsline {subsection}{\numberline {5.2.}Preliminari projekto peržiūra}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{26}
+\contentsline {section}{Priedai}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{26}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{27}
+\contentsline {section}{Šaltinių sąrašas}{32}
