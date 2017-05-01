@@ -16,13 +16,13 @@
 \usepackage{enumitem}
 
 % Allow having thick borders in a table
-%\makeatletter
-%\newcommand{\thickhline}{%
-%    \noalign {\ifnum 0=`}\fi \hrule height 2pt
-%    \futurelet \reserved@a \@xhline
-%}
-%\newcolumntype{"}{@{\vrule width 2pt}}
-%\makeatother
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 2pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\vrule width 2pt}}
+\makeatother
 
 % Titulinio aprašas
 \university{Vilniaus universitetas}
@@ -464,6 +464,42 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
   \end{tabular}}
   \label{tab:table example}
 \end{table}
+
+\section{Techninė sistemos architektūra}
+	Šiame skyriuje pateikiama kuriamos sistemos struktūra, apibrėžiant sistemą sudarančius modulius, jų ryšius, išdėstymą vykdymo aplinkose. 
+	\subsection{Sistemos komponentai}
+		Sistema yra suskirstyta į vartotojo sąsajos, duomenų ir duomenų saugojimo paketus.
+		Komponentams sudaryti buvo naudojamas MVC (model, view, controller) šablonas.
+		Vartotojo sąsajos paketą sudaro šie komponentai:
+		\begin{itemize}
+			\item Puslapių komponentas - yra atsakingas už sąsajos vaizdavimą lankytojui ir atitinka view dalį MVC šablone;
+			\item Kontrolerių komponentas - yra tarpininkas tarp vartotojo sąsajos ir duomenų paketo.
+				Jis nusprendžia kokius puslapius rodyti ir reaguoja į lankytojo įvestis; 
+		\end{itemize}
+		Duomenų ir duomenų saugojimo paketai sudaro modelio dalį MVC šablone.
+		Komponentai sudarantys duomenų paketą yra atsakingi už sistemos logiką.
+		Duomenų saugojimo paketą sudaro komponentai, atsakingi už duomenų pakete sukurtų objektų išsaugojimą duomenų bazėje,
+		bei už prieiga prie išorinės knygų duomenų bazės (naudojant pvz. google books api). 
+		Visi komponentai yra vaizduojami komponentų diagramoje (žr.	%FIXME: add reference to img
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.8]{img/Component.png}
+			\caption{Komponentų diagrama}
+			\label{img:psi2-component}
+		\end{figure}
+	\subsection{Sistemos komponentų išdėstymas tinkle}
+		Sistemos komponentų išdėstymą vykdymo aplinkose vaizduoja diegimo diagrama (žr. ).	%FIXME: add reference to img
+		Sistemai įgyvendinti reikia web serverio, duomenų bazės bei išorinės (KKK sistemai nepriklausančios) 
+		knygų duomenų bazės, kurios prieeinamumas būtu pakankamas.
+		Tinklapis turėtų būti prienamas naudojant bet kokią kompiuterio ar mobiliojo įrenginio naršyklę.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.9]{img/Deployment.png}
+			\caption{Komponentų išdėstymas tinkle}
+			\label{img:psi2-deployment}
+		\end{figure}
+
+
 
 \section{Peržiūros metu rastos klaidos}
 	Vykdant projektą kiekvianame etape yra vykdomos įvairių tipų peržiūros.
