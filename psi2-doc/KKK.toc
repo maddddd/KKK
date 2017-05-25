@@ -32,24 +32,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{13}
+\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{25}
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{27}
+\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{27}
+\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{29}
+\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Peržiūros metu rastos klaidos}{30}
+\contentsline {section}{\numberline {5.}Peržiūros metu rastos klaidos}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.}Reikalavimų peržiūra}{30}
+\contentsline {subsection}{\numberline {5.1.}Reikalavimų peržiūra}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.}Preliminari projekto peržiūra}{30}
+\contentsline {subsection}{\numberline {5.2.}Preliminari projekto peržiūra}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{31}
+\contentsline {section}{Priedai}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{31}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{32}
+\contentsline {section}{Šaltinių sąrašas}{33}

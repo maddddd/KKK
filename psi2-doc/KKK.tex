@@ -15,8 +15,9 @@
 \usepackage{array}
 \usepackage{enumitem}
 
-\setitemize{noitemsep}
-\setenumerate{noitemsep}
+% Remove spaces between items if needed
+%\setitemize{noitemsep}
+%\setenumerate{noitemsep}
 
 % Allow having thick borders in a table
 \makeatletter
@@ -215,7 +216,8 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \end{table}
 
 \section{Užduotys}
-	Šiame skyriuje pateikiamos sistemos atliekamos užduotys, jų pagrindiniai bei alternatyvūs scenarijai.
+	Šiame skyriuje pateikiamos sistemos atliekamos užduotys, 
+	jų pagrindiniai bei alternatyvūs scenarijai.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.62]{img/UseCase.png}
@@ -226,6 +228,9 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		Toliau pateikiami visų funkcinius reikalavimus vykdančių užduočių aprašymai. 
 		Aprašymų tikslas - aprašyti ką sistema turi daryti vartotojui norint įvykdyti vieną ar kitą užduotį,
 		todėl jie yra pateikiami vartotojo užklausos - sistemos atsakymo forma.
+		Taip pat šalia kiekvienos užduotys yra pateikiamos sekų diagramos,
+		detaliai pavaizduojančios užduoties vykdyma, esybių sąveiką ir priskiriančios
+		operacijas klasėms.
 		\begin{enumerate}[label=\textbf{U\arabic*.}]
 			%TODO: gui eskizai
 			\item \textbf{Užsiregistruoti};		
@@ -273,12 +278,24 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
 				Vartotojas rastų knygų saraše pasirenka vieną iš knygų ir paspaudžia mygtuką „pridėti pasirinktą knygą“.
 				Sistema vykdo užduotį „pridėti pasirinktą knygą prie pageidavimų sąrašo“ (žr. U7).
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.7]{img/U3-sequence.png}
+					\caption{U3 sekų diagrama}
+					\label{img:psi2-u3-sequence}
+				\end{figure}
 			\item \textbf{Įkelti knygą į sistemą;}\\
 				Vartotojas, būdamas pagrindiniame puslapyje, paspaudžia mygtuką „Įkelti knygą“. Sistema vykdo užduotį „Ieškoti knygos knygų duomenų bazėje“ (žr. U6).
 				Vartotojas rastų knygų saraše pasirenka vieną iš knygų. Sistema iš knygų sąrašo paima pasirinktą knygą ir paima jos aprašymą.
 				Sistema parodo knygos pridėjimo langą, kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knygą ir apie
 				savo turimą egzempliorių. Vartotojas paspaudžia mygtuką „išsaugoti“. Sistema patikrina, ar vartotojo įvestas komentaras nėra per ilgas.
 				Sistema išsaugo knygą ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.7]{img/U4-sequence.png}
+					\caption{U4 sekų diagrama}
+					\label{img:psi2-u4-sequence}
+				\end{figure}
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei sistemai nepavyksta susisiekti su knygų duomenų baze arba negaunamas atsakymas su knygos aprašymu, vartotojui parodomas pranešimas apie sutrikimą.
@@ -612,13 +629,15 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 \setcounter{secnumdepth}{4}
 
 
-%\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
+%FIXME: fix numeration
 \sectionnonum{Šaltinių sąrašas}
 	\begin{itemize}
 		\item http://www.mif.vu.lt/~karolis/PSI2.html
 		\item Don Rosenberg, Matt Stephens: Use Case Driven Object Modeling with UML: Theory and Practice, 2007
 	\end{itemize}
 
+
+%\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
 % (cituotų, perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų
 % bibliografiniai aprašai.  Šaltinių sąrašas spausdinamas iš naujo puslapio.
