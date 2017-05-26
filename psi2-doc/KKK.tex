@@ -290,18 +290,18 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				Sistema parodo knygos pridėjimo langą, kurį užpildo informacija apie knygą (autorius, pavadinimas, leidimo metai, aprašymas). Vartotojas prideda savo komentarus apie knygą ir apie
 				savo turimą egzempliorių. Vartotojas paspaudžia mygtuką „išsaugoti“. Sistema patikrina, ar vartotojo įvestas komentaras nėra per ilgas.
 				Sistema išsaugo knygą ir visą jos informaciją įkeltų knygų kataloge. Vartotojui parodomas pranešimas, kad knyga sėkmingai įkelta.\\
-				\begin{figure}[H]
-					\centering
-					\includegraphics[scale=0.7]{img/U4-sequence.png}
-					\caption{U4 sekų diagrama}
-					\label{img:psi2-u4-sequence}
-				\end{figure}
 				\textbf{Alternatyvūs scenarijai:}
 				\begin{itemize}
 					\item Jei sistemai nepavyksta susisiekti su knygų duomenų baze arba negaunamas atsakymas su knygos aprašymu, vartotojui parodomas pranešimas apie sutrikimą.
 					\item Jei vartotojo pridėtas komentaras yra per ilgas, vartotojui parodomas pranešimas apie tai.
 					\item Jei dėl kokių nors priežasčių knygos nepavyko išsaugoti įkeltų knygų saraše, vartotojui parodomas pranešimas ir paprašoma bandyti vėliau.
 				\end{itemize}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.7]{img/U4-sequence.png}
+					\caption{U4 sekų diagrama}
+					\label{img:psi2-u4-sequence}
+				\end{figure}
 			\item \textbf{Ieškoti knygos įkeltų knygų kataloge;}\\
 				Lankytojas, būdamas pagrindiniame puslapyje, paspaudžia mygtuką „Ieškoti knygos". Sistema parodo knygos ieškojimo langą.
 				Lankytojas pasirenka, ar ieškoti pagal ISBN kodą, ar pagal raktinius žodžius. 
@@ -575,7 +575,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\label{img:psi2-deployment}
 		\end{figure}
 
-
+\section{Testavimo planas ir scenarijai}
 
 \section{Peržiūros metu rastos klaidos}
 	Vykdant projektą kiekviename etape yra vykdomos įvairių tipų peržiūros.
@@ -587,7 +587,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item Rašybos - įrašytos praleistos raidės ir sudėtos nosinės;
 		\end{itemize}
 	\subsection{Preliminari projekto peržiūra}
-		Ši peržiūra yra vykdoma, atlikus robastiškumo analizę.	%TODO: add more
+		Ši peržiūra yra vykdoma, atlikus robastiškumo analizę.
 		\begin{itemize}
 			\item Prie kiekvieno skyrelio pridėtas jo aprašymas, paskirtis;
 			\item Užduočių tekste nebuvo nurodytas puslapis, iš kurio užduotis prasideda (U3, U4, U5);
@@ -596,7 +596,17 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item Trūkstama knygų sąrašo esybė U3 ir U4 robastiškumo diagramose;
 			\item Trūkstama knygos esybė U7 robastiškumo diagramoje;
 		\end{itemize}
-	
+	\subsection{Kritinė projekto peržiūra}
+		Ši peržiūra yra vykdoma atlikus sistemos projektavimą,
+		t.y. padarius sekų diagramas, ir atnaujinus statinę programų sistemos struktūrą.
+		Peržiūros tikslas įsitinti, kad suprojektuota sistema vykdo reikalavimus,
+		ir statinis modelis atitinka dinaminį.
+		\begin{itemize}
+			\item Trūkstami parametrai prie operacijų U3 ir U4 sekų diagramose;
+			\item Trūkstama įkeltos knygos klasė ir jos sukūrimo operacija, U4 sekų diagramoje;
+			\item Trūkstama įkeltos knygos validacijos operacija U4 diagramoje;
+			\item Praleistas knygos radimo, knygų sąraše žingsnis U3 diagramoje;
+		\end{itemize}
 \setcounter{secnumdepth}{0}
 \sectionnonum{Priedai}
 \subsection{Užsakovo reikalavimai sistemai}
