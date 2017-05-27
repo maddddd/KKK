@@ -327,7 +327,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item \textbf{Ieškoti knygos knygų duomenų bazėje}\\
 				Sistema, vykdydama kitas užduotis, gauna komandą ieškoti knygos išorinėje knygų duomenų bazėje. 
 				Sistema lankytojui parodo knygos paieškos langą. Lankytojas pasirenka, ar nori knygos ieškoti pagal
-				ISBN kodą, ar pagal raktažodžius (autorių ar pavadinimą). Lankytojas įveda ISBN kodą arba raktažodžius.
+				ISBN kodą, ar pagal raktažodžius (autorių ar pavadinimą) ir paspaudžia ieškoti. Lankytojas įveda ISBN kodą arba raktažodžius.
 				Sistema patikrina, ar įvestis yra validi. Sistema, naudodama lankytojo įvestį, sukuria užklausą knygų duomenų bazei. 
 				Sistema gauna atsakymą ir patikrina, ar buvo gauta bent viena knyga. Sistema parodo rastų knygų sąrašą.\\
 				\textbf{Alternatyvūs scenarijai:}
@@ -338,6 +338,12 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\item Jei knygų duomenų bazė neranda nei vienos knygos, naudodama lankytojo įvestį, vartotojui apie tai pranešama. 
 						Lankytojas gali pakeisti įvestį ir ieškoti iš naujo;
 				\end{itemize}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.7]{img/U6-sequence.png}
+					\caption{U6 sekų diagrama}
+					\label{img:psi2-u6-sequence}
+				\end{figure}
 			\item \textbf{Pridėti pasirinktą knygą prie pageidavimų sąrašo}\\
 				Sistema, vykdydama kitas užduotis, gauna komandą pridėti pasirinktą knygą prie pageidavimų sąrašo.
 				Sistema patikrina, ar knygos dar nėra vartotojo pageidavimų sąraše duomenų bazėje, ir knygą prideda.
@@ -346,6 +352,12 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				\begin{itemize}
 					\item Jei vartotojo pasirinkta knyga jau yra jo pageidavimų sąraše, vartotojui apie tai pranešama. Knyga nėra pridedama prie pageidavimų sąrašo;
 				\end{itemize}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.7]{img/U7-sequence.png}
+					\caption{U7 sekų diagrama}
+					\label{img:psi2-u7-sequence}
+				\end{figure}
 			\item \textbf{Peržiūreti vartotojo puslapį;}\\
 				Vartotojas paspaudžia paryškintą kito vartotojo vardą prie skelbimo ir yra nukreipiamas į pasirinktojo vartotojo puslapį, kuriame mato pasirinktojo vartotojo statistiką, siūlomas knygas bei komentarus. 
 				Vartotojo puslapyje kitas vartotojas, paspaudęs mygtuką „siūlyti knygą“, gali pirmajam vartotojui pasiūlyti pirkti knygą iš savo parduodamų knygų sąrašo.
@@ -613,6 +625,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 			\item Trūkstama įkeltos knygos validacijos operacija U4 diagramoje;
 			\item Praleistas knygos radimo, knygų sąraše žingsnis U3 diagramoje;
 			\item U5 tekste nepaminėtas mygtuko paspaudimas;
+			\item Trūkstama HttpSession klasė statiniame modelyje;
 		\end{itemize}
 \setcounter{secnumdepth}{0}
 \sectionnonum{Priedai}

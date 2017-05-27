@@ -32,28 +32,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{16}
+\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{28}
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{30}
+\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{30}
+\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{32}
+\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Testavimo planas ir scenarijai}{33}
+\contentsline {section}{\numberline {5.}Testavimo planas ir scenarijai}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{34}
+\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{34}
+\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{34}
+\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{34}
+\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{35}
+\contentsline {section}{Priedai}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{35}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{36}
+\contentsline {section}{Šaltinių sąrašas}{37}
