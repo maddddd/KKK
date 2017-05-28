@@ -144,13 +144,18 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 	Šiame skyriuje pateikiamas struktūrinis nagrinėjamos dalykinės srities modelis. 
 	Modelis pateikiamas UML klasių diagramomis kartu su žodynu - sąrašu esybių su jų aprašymais. 
 	\subsection{Esybės}
-		Dalykinės srities modelis pateikiamas klasių diagrama (žr. 1 pav.). Ši klasių diagrama yra
-		preliminari ir neatspindi visų galutinės sistemos klasių.
+		Dalykinės srities modelis pateikiamas klasių diagramomis.
+		Kadangi sistemą sudaro vartotojo sąsajos ir duomenų paketai (žr. 4.1 skyrių),
+		pateikiamos atskiros klasių diagramos šiems paketams.
+		Duomenų paketo klasės (žr. 1 pav.) atitinka dalykines srities esybes ir yra atsakingos už
+		sistemos logiką.
+		Vartotojo sąsajos klasės (žr. 2 pav.) yra atsakingos už puslapių rodymą lankytojui ir reagavimą į
+		lankytojo įvestis.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.7]{img/DomainModel.png}
-			\caption{Dalykinės srities esybės}
-			\label{img:psi2-domain-model}
+			\includegraphics[scale=0.6]{img/Data-ClassDiagram.png}
+			\caption{Duomenų paketo klasių diagrama}
+			\label{img:psi2-data-class}
 		\end{figure}
 		\begin{figure}[H]
 			\centering

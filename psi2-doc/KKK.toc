@@ -24,36 +24,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.}Esybės}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Žodynas}{6}
+\contentsline {subsection}{\numberline {2.2.}Žodynas}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{7}
+\contentsline {subsection}{\numberline {2.3.}Reikalavimų - esybių atsekamumo matrica}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Užduotys}{9}
+\contentsline {section}{\numberline {3.}Užduotys}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{10}
+\contentsline {subsection}{\numberline {3.1.}Užduočių aprašymai}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{19}
+\contentsline {subsection}{\numberline {3.2.}Robastiškumo analizė}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{31}
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų - užduočių atsekamumo matrica}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{33}
+\contentsline {section}{\numberline {4.}Techninė sistemos architektūra}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{33}
+\contentsline {subsection}{\numberline {4.1.}Sistemos komponentai}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{35}
+\contentsline {subsection}{\numberline {4.2.}Sistemos komponentų išdėstymas tinkle}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Testavimo planas ir scenarijai}{36}
+\contentsline {section}{\numberline {5.}Testavimo planas ir scenarijai}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{37}
+\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{37}
+\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{37}
+\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{37}
+\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{38}
+\contentsline {section}{Priedai}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{38}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{39}
+\contentsline {section}{Šaltinių sąrašas}{40}
