@@ -622,6 +622,12 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\end{figure}
 
 \section{Testavimo planas ir scenarijai}
+	Šiame skyriuje pateikiami užduočių pagrindu sukurti testavimo planai.
+	Testavimas vyks vienetų testų (angl. unit test) pavidalu.
+	Kiekvienas testas susideda iš vieno ar keliu scenarijų kurie yra testuojami.
+	Prieš kiekvieno testo scenarijų sąrašą pateikiamos bendros pradinės salygos, 
+	kurios pradeda vieną iš scenarijų. Pačiuose scenarijuose aprašytos salygos ir rezultatas, 
+	gražinamos reikšmės arba pakeistos objekto būsenos forma.
 	\subsection{Testavimo scenarijai}
 		\begin{enumerate}[label=\textbf{T\arabic*}]
 			\item \textbf{Rodyti registracijos puslapį}\\
@@ -710,6 +716,40 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 					\item \textbf{Knyga nerandama}\\
 						Jei paieškos informacija yra validi, tačiau įkeltų knygų kataloge nėra nei vienos tokios knygos,
 						gražinamas tusčias BookList objektas.
+				\end{enumerate}
+			\item \textbf{Ieškoti knygų duomenų bazėje}\\
+				Iškviečiamas BookDatabaseList klasės metodas Search, per parametrus perduodamas paieškos tipas,
+				bei paieškos eilutė.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Paieškos informacija netinkama}\\
+						Jei nurodomas paieškos tipas yra pagal isbn kodą, tačiau perduodamas ne validus isbn
+						kodas, išmetama išimtis.
+					\item \textbf{Paieškos informacija yra tinkama}\\
+						Jei paieškos informacija yra tinkama sukuriama ir išsiunčiama užklausa.
+						Gavus atsakymą gražinamas Response objektas su užpildyta informacija apie atsakymą ir
+						knygų sąrašu.
+				\end{enumerate}
+			\item \textbf{Išnagrinėti knygų duomenų bazės atsakymą}\\
+				Iškviečiamas GoogleBooksApi metodas ParseResponse, nurodant vietą, kurioje gautas atsakymas.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Atsakymo statusas teigiamas, buvo rastą knygų}\\
+						Jei atsakymo Http kodas yra 200 ir atsakyme yra knygų, gražinama Response klasė su knygomis užpildytu BookList objektu.
+					\item \textbf{Atsakymo statusas teigiamas, buvo rastą knygų}\\
+						Jei atsakymo Http kodas yra 200 bet atsakyme nėra knygų, gražinama Response klasė su tusčiu BookList objektu.
+					\item \textbf{Atsakymo kodas neigiamas}\\
+						Jei atsakymo Http kodas yra nurodantis klaidą, gražinama Response klasė su nurodytu kodu ir
+						klaidos eilute.
+					\item \textbf{Atsakymas nesuprantamas}\\
+						Išmetama išimtis
+				\end{enumerate}
+			\item \textbf{Pridėti knygą prie pageidavimų sąrašo}\\
+				Iškviečiamas User metodas AddToWhishlist(book).
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Knyga jau yra pridėta}\\
+						Išmetama išimitis
+					\item \textbf{Knyga pridėdama}\\
+						Jei knygos dar nėra vartotojo pageidavimų sąraše, knyga yra pridedama prie Whishlist objekto
+						priklausančio tam vartotojui.
 				\end{enumerate}
 		\end{enumerate}
 

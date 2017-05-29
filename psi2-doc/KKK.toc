@@ -46,16 +46,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.}Testavimo scenarijai}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{40}
+\contentsline {section}{\numberline {6.}Peržiūros metu rastos klaidos}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{40}
+\contentsline {subsection}{\numberline {6.1.}Reikalavimų peržiūra}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{40}
+\contentsline {subsection}{\numberline {6.2.}Preliminari projekto peržiūra}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{40}
+\contentsline {subsection}{\numberline {6.3.}Kritinė projekto peržiūra}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Priedai}{41}
+\contentsline {section}{Priedai}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Užsakovo reikalavimai sistemai}{41}
+\contentsline {subsection}{Užsakovo reikalavimai sistemai}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltinių sąrašas}{42}
+\contentsline {section}{Šaltinių sąrašas}{43}
