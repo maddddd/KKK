@@ -622,6 +622,74 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 		\end{figure}
 
 \section{Testavimo planas ir scenarijai}
+	\subsection{Testavimo scenarijai}
+		\begin{enumerate}[label=\textbf{T\arabic*}]
+			\item \textbf{Rodyti registracijos puslapį}\\
+				MainPage klase iskviečia MainPage klasės metodą OnRegisterClick.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Puslapis parodomas}\\
+					 OnRegisterClick metodas sukuria ir gražina RegisterPage objektą.
+				\end{enumerate}
+			\item \textbf{Registracijos puslapyje paspaudžiamas mygtukas patvirtinti}\\
+				Iškviečiamas RegisterPageController klasės metodas OnConfirm.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Informacija tinkama}\\
+						Jei RegisterPage laukeliai yra užpildyti tinkama informacija naujam vartotojui sukurti,
+						vartotojas sukuriamas, užregistruojamas, išsiunčiamas patvirtinimo laiškas ir gražinamas MainPage objektas, 
+					su pranešimu „patvirtinimo laiškas išsiųstas."
+					\item \textbf{Informacija netinkama}\\
+						Jei RegisterPage laukeliai yra užpildyti netinkama informacija,
+						RegisterPage objekte nustatomas pranešimas apie klaidą, ir jis parodomas.
+				\end{enumerate}
+			\item \textbf{Patikrinti registracijos informaciją}\\
+				Iškviečiamas User klasės metodas Validate.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Informacija tinkama}\\
+						Jei visi reikalingi User objekto atributai yra užpildyti tinkama informacija, 
+						metodas gražina true.
+					\item \textbf{Informacija netinkama}\\
+						Jei User objekto atributai yra nėra užpildyti arba užpildyti netinkama informacija,
+						išmetama išimties klasė kurioje nustatytas tektas paaiškinantis klaidą.
+				\end{enumerate}
+			\item \textbf{Vartotojas pridedamas prie vartotojų sąrašo}\\
+				Iškviečiamas User klasės metodas Register.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Vartotojas neegzistuoja}\\
+						Jei tokio vartotojo su tokiu vardu ir el. paštu duomenų bazėje dar nėra,
+						Jis yra pridedamas į duomenų bazę ir išsiunčiamas patvirtinimo laiškas.
+					\item \textbf{Vartotojas egzistuoja}\\
+						Jei duomenų bazėje randamas vartotojas su tokiu vartotojo vardu ar
+						el. paštu, išmetama išimties klasė, kurioje nurodoma, kuri informacija jau egzistuoja.
+				\end{enumerate}
+			\item \textbf{Vartotojas patvirtinamas}\\
+				Iškviečiamas User klasės metodas Confirm, kaip argumentas perduodama patvirtinimo id, 
+				kuris buvo nuorodoje.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Patvirtinimo id yra duomenų bazėje}\\
+						Jei duomenų bazėje randamas vartotojas, kuriam butų priskirtas toks patvirtinimo id,
+						objekto statuso atributas pakeičiamas į patvirtintą ir pakeistas vartotojo statusas
+						išsaugomas duomenų bazėje.
+					\item \textbf{Patvirtinimo id nėra duomenų bazėje}\\
+						Jei nepatvirtinto vartotojo, kuriam butų priskirtas toks patvirtinimo id nėra,
+						išmetama išimtis.
+				\end{enumerate}
+			\item \textbf{Vartotojo prisijungimas}\\
+				Iškviečiamas statinis User klasės metodas Login, su vartotojo vardu ir slaptažodžiu
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Vartotojas egzistuoja, slaptažodis teisingas}\\
+						Jei duomenų bazėje yra vartotojas su tokiu vardu, 
+						jis paimamas iš duomenų bazės, jo statusas pakeičiamas į prisijungūsį ir 
+						gražinamas kviečiančiai funkcijai.
+					\item \textbf{Vartotojas neegzistuoja}\\
+						Jei vartotojo su tokiu vardu duomenų bazėje nėra, 
+						išmetama išimtis, kurioje nurodoma ši klaida.
+					\item \textbf{Vartotojas egzistuoja, slaptažodis neteisingas}\\
+						Jei vartotojas su tokiu vardu egzistuoja duomenų bazėje, 
+						tačiau slaptažodis yra neteisingas, išmetama išimtis.
+				\end{enumerate}
+		\end{enumerate}
+
+	
 
 \section{Peržiūros metu rastos klaidos}
 	Vykdant projektą kiekviename etape yra vykdomos įvairių tipų peržiūros.
