@@ -656,7 +656,7 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 				\begin{enumerate}[label*=\textbf{.\arabic*}]
 					\item \textbf{Vartotojas neegzistuoja}\\
 						Jei tokio vartotojo su tokiu vardu ir el. paštu duomenų bazėje dar nėra,
-						Jis yra pridedamas į duomenų bazę ir išsiunčiamas patvirtinimo laiškas.
+						jis yra pridedamas į duomenų bazę ir išsiunčiamas patvirtinimo laiškas.
 					\item \textbf{Vartotojas egzistuoja}\\
 						Jei duomenų bazėje randamas vartotojas su tokiu vartotojo vardu ar
 						el. paštu, išmetama išimties klasė, kurioje nurodoma, kuri informacija jau egzistuoja.
@@ -687,9 +687,31 @@ Sistema skirta naudoti registruotiems vartotojams bei sistemos svečiams
 						Jei vartotojas su tokiu vardu egzistuoja duomenų bazėje, 
 						tačiau slaptažodis yra neteisingas, išmetama išimtis.
 				\end{enumerate}
+			\item \textbf{Patikrinti įvestį knygos pridėjimo puslapyje}\\
+				Iškviečiamas UploadedBook klasės metodas Validate.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Įvestis validi}\\
+						Jei bandoma pridėti knyga egzistuoja, komentaras yra, 
+						ir ne per ilgas, metodas gražina true.
+					\item \textbf{Įvestis nevalidi}\\
+						Jei ne visi reikalingi objekto atributai yra nustatyti,
+						arba komentaras yra per ilgas, išmetam išimtis, kurioje nurodoma kas negerai.
+				\end{enumerate}
+			\item \textbf{Ieškoti knygos įkeltų knygų kataloge}\\
+				Iškviečiamas UploadedBookList klasės metodas Search, per parametrus perduodamas paieškos tipas,
+				bei paieškos eilutė.
+				\begin{enumerate}[label*=\textbf{.\arabic*}]
+					\item \textbf{Paieškos informacija netinkama}\\
+						Jei nurodomas paieškos tipas yra pagal isbn kodą, tačiau perduodamas ne validus isbn
+						kodas, išmetama išimtis.
+					\item \textbf{Knyga randama}\\
+						Jei paieškos informacija yra tinkama yra bent viena knyga duomenų bazėje tarp įkeltų knygų,
+						gražinamas BookList objektas užpildytas tomis knygomis.
+					\item \textbf{Knyga nerandama}\\
+						Jei paieškos informacija yra validi, tačiau įkeltų knygų kataloge nėra nei vienos tokios knygos,
+						gražinamas tusčias BookList objektas.
+				\end{enumerate}
 		\end{enumerate}
-
-	
 
 \section{Peržiūros metu rastos klaidos}
 	Vykdant projektą kiekviename etape yra vykdomos įvairių tipų peržiūros.
